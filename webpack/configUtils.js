@@ -26,7 +26,7 @@ const POSTCSS_LOADER = {
 const DEFINE_PLUGIN = new webpack.DefinePlugin({
   'process.env.NODE_ENV': IS_DEV ? JSON.stringify('development') : JSON.stringify('production'),
   'process.env.STEEMCONNECT_CLIENT_ID': JSON.stringify(
-    process.env.STEEMCONNECT_CLIENT_ID || 'busy.app',
+    process.env.STEEMCONNECT_CLIENT_ID || 'ftinetwork',
   ),
   'process.env.STEEMCONNECT_REDIRECT_URL': JSON.stringify(
     process.env.STEEMCONNECT_REDIRECT_URL || 'http://localhost:3000/callback',
