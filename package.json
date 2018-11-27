@@ -153,6 +153,6 @@
     },
     "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js"
   },
-  "repository": "https://github.com/adcpm/busy.git",
+  "repository": "https://github.com/varioso/ftin.git",
   "license": "MIT"
 }
