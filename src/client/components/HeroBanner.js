@@ -11,7 +11,7 @@ class HeroBanner extends React.Component {
     {
       image: '/images/hero-1.svg',
       titleID: 'hero_banner_title_1',
-      defaultTitle: 'Write and publish a post on Steem',
+      defaultTitle: 'Write and publish a post on FTIN',
       className: 'HeroBannerSlider__image',
       number: 1,
     },
