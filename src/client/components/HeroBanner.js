@@ -56,7 +56,7 @@ class HeroBanner extends React.Component {
               <img
                 src="/images/hero-1.svg"
                 className="HeroBanner__content__image"
-                alt="Write and publish a post on Steem"
+                alt="Write and publish a post on FTIn"
               />
               <div className="HeroBanner__content__description">
                 <div className="HeroBanner__content__number">1</div>
