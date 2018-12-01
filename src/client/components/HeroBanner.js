@@ -63,7 +63,7 @@ class HeroBanner extends React.Component {
                 <div className="HeroBanner__content__title">
                   <FormattedMessage
                     id="hero_banner_title_1"
-                    defaultMessage="1"
+                    defaultMessage=""
                   />
                 </div>
               </div>
@@ -79,7 +79,7 @@ class HeroBanner extends React.Component {
                 <div className="HeroBanner__content__title">
                   <FormattedMessage
                     id="hero_banner_title_2"
-                    defaultMessage="2"
+                    defaultMessage=""
                   />
                 </div>
               </div>
@@ -88,14 +88,14 @@ class HeroBanner extends React.Component {
               <img
                 src="/images/reward.svg"
                 className="HeroBanner__content__image"
-                alt="Earn rewards in Steem"
+                alt=""
               />
               <div className="HeroBanner__content__description">
                 <div className="HeroBanner__content__number">3</div>
                 <div className="HeroBanner__content__title" style={{ width: '130px' }}>
                   <FormattedMessage
                     id="hero_banner_title_3"
-                    defaultMessage="3"
+                    defaultMessage=""
                   />
                 </div>
               </div>
