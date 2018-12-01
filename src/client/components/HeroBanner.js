@@ -16,14 +16,14 @@ class HeroBanner extends React.Component {
       number: 1,
     },
     {
-      image: '/images/hero-2.svg',
+      image: '/images/create.svg',
       titleID: 'hero_banner_title_2',
       defaultTitle: 'The community upvotes your post',
       className: 'HeroBannerSlider__image',
       number: 2,
     },
     {
-      image: '/images/hero-3.svg',
+      image: '/images/reward.svg',
       titleID: 'hero_banner_title_3',
       defaultTitle: 'Earn rewards in Steem',
       className: 'HeroBannerSlider__image',
@@ -70,7 +70,7 @@ class HeroBanner extends React.Component {
             </div>
             <div className="HeroBanner__content">
               <img
-                src="/images/hero-2.svg"
+                src="/images/create.svg"
                 className="HeroBanner__content__image"
                 alt="The community upvotes your post"
               />
@@ -86,7 +86,7 @@ class HeroBanner extends React.Component {
             </div>
             <div className="HeroBanner__content">
               <img
-                src="/images/hero-3.svg"
+                src="/images/reward.svg"
                 className="HeroBanner__content__image"
                 alt="Earn rewards in Steem"
               />
