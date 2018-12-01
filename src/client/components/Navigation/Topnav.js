@@ -353,7 +353,9 @@ class Topnav extends React.Component {
           <div className={classNames('left', { 'Topnav__mobile-hidden': searchBarActive })}>
             <Link className="Topnav__brand" to="/">
               <i className="iconfont icon-busy Topnav__brand-icon" />
-              <ahref="http://futuretechinsider.com/wp-content/uploads/2018/11/FTI-NETWORK-transp.png"></a>
+                 <div>
+                  <ahref="http://futuretechinsider.com/wp-content/uploads/2018/11/FTI-NETWORK-transp.png"></a>
+                 </div>
             </Link>
             <span className="Topnav__version">alpha</span>
           </div>
