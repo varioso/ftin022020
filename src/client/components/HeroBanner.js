@@ -9,7 +9,7 @@ import './HeroBannerSlider.less';
 class HeroBanner extends React.Component {
   static SLIDER_CONTENTS = [
     {
-      image: '/images/hero-1.svg',
+      image: '/images/innovation.svg',
       titleID: 'hero_banner_title_1',
       defaultTitle: 'Write and publish a post on FTIN',
       className: 'HeroBannerSlider__image',
