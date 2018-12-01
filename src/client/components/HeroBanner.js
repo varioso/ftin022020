@@ -54,12 +54,12 @@ class HeroBanner extends React.Component {
           <div className="HeroBanner__content-container">
             <div className="HeroBanner__content">
               <img
-                src="/images/hero-1.svg"
+                src="/images/innovation.svg"
                 className="HeroBanner__content__image"
                 alt="Write and publish a post on FTIn"
               />
               <div className="HeroBanner__content__description">
-                <div className="HeroBanner__content__number">1</div>
+                <div className="HeroBanner__content__number"></div>
                 <div className="HeroBanner__content__title">
                   <FormattedMessage
                     id="hero_banner_title_1"
