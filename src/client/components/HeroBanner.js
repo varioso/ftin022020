@@ -11,21 +11,21 @@ class HeroBanner extends React.Component {
     {
       image: '/images/innovation.svg',
       titleID: 'hero_banner_title_1',
-      defaultTitle: 'Write and publish a post on FTIN',
+      defaultTitle: '1',
       className: 'HeroBannerSlider__image',
       number: 1,
     },
     {
       image: '/images/create.svg',
       titleID: 'hero_banner_title_2',
-      defaultTitle: 'The community upvotes your post',
+      defaultTitle: '2',
       className: 'HeroBannerSlider__image',
       number: 2,
     },
     {
       image: '/images/reward.svg',
       titleID: 'hero_banner_title_3',
-      defaultTitle: 'Earn rewards in Steem',
+      defaultTitle: '3',
       className: 'HeroBannerSlider__image',
       number: 3,
     },
@@ -59,11 +59,11 @@ class HeroBanner extends React.Component {
                 alt="Write and publish a post on FTIn"
               />
               <div className="HeroBanner__content__description">
-                <div className="HeroBanner__content__number"></div>
+                <div className="HeroBanner__content__number">1</div>
                 <div className="HeroBanner__content__title">
                   <FormattedMessage
                     id="hero_banner_title_1"
-                    defaultMessage="Write and publish a post on FTIn"
+                    defaultMessage="1"
                   />
                 </div>
               </div>
@@ -79,7 +79,7 @@ class HeroBanner extends React.Component {
                 <div className="HeroBanner__content__title">
                   <FormattedMessage
                     id="hero_banner_title_2"
-                    defaultMessage="The community upvotes your post"
+                    defaultMessage="2"
                   />
                 </div>
               </div>
@@ -95,7 +95,7 @@ class HeroBanner extends React.Component {
                 <div className="HeroBanner__content__title" style={{ width: '130px' }}>
                   <FormattedMessage
                     id="hero_banner_title_3"
-                    defaultMessage="Earn rewards in Steem"
+                    defaultMessage="3"
                   />
                 </div>
               </div>
