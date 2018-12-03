@@ -63,7 +63,7 @@ class HeroBanner extends React.Component {
                 <div className="HeroBanner__content__title">
                   <FormattedMessage
                     id="pitch_an_article_on_fti_network"
-                    defaultMessage="Pitch a content idea to FTI Network"
+                    defaultMessage="Pitch content to FTI Network"
                   />
                 </div>
               </div>
