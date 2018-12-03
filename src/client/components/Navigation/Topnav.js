@@ -24,7 +24,7 @@ import Notifications from './Notifications/Notifications';
 import LanguageSettings from './LanguageSettings';
 import './Topnav.less';
 
-logo-ftin: url('/images/FTI-NETWORK-transp.png');
+@logo-ftin: url('/images/FTI-NETWORK-transp.png');
 
 
 @injectIntl
