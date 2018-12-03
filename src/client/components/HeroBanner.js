@@ -62,8 +62,8 @@ class HeroBanner extends React.Component {
                 <div className="HeroBanner__content__number">1</div>
                 <div className="HeroBanner__content__title">
                   <FormattedMessage
-                    id="pitch_an_article_on_ftin"
-                    defaultMessage="Pitch an article on FTIN"
+                    id="pitch_an_article_on_fti_network"
+                    defaultMessage="Pitch an article on FTI Network"
                   />
                 </div>
               </div>
@@ -78,8 +78,8 @@ class HeroBanner extends React.Component {
                 <div className="HeroBanner__content__number">2</div>
                 <div className="HeroBanner__content__title">
                   <FormattedMessage
-                    id="hero_banner_title_2"
-                    defaultMessage=""
+                    id="create_and_post_on_the_network"
+                    defaultMessage="Create content and post it on the network"
                   />
                 </div>
               </div>
