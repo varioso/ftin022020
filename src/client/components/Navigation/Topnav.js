@@ -352,7 +352,7 @@ class Topnav extends React.Component {
         <div className="topnav-layout">
           <div className={classNames('left', { 'Topnav__mobile-hidden': searchBarActive })}>
             <Link className="Topnav__brand" to="/">
-               <img src="/images/FTI-NETWORK-transp.png" />
+               <img src="/images/FTI-NETWORK-transp-scaled.png" />
                 <i className="iconfont Topnav__brand-icon" />
                  &#160;
             </Link>
