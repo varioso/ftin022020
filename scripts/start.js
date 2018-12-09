@@ -26,7 +26,7 @@ async function main() {
     compress: true,
     noInfo: true,
     headers: {
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': '^(https?://(?:.+\.)?ftin.herokuapp.com(?::\d{1,5})?)$',
     },
     historyApiFallback: {
       disableDotRule: true,
