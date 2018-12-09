@@ -1,7 +1,7 @@
 import { Client } from 'busyjs';
 
 function createBusyAPI() {
-  const client = new Client('wss://busy.org');
+  const client = new Client('wss://api.busy.org');
 
   client.sendAsync = (message, params) =>
     new Promise((resolve, reject) => {
