@@ -113,4 +113,5 @@ export const people = [
   'ocrdu',
   'nanzo-scoop',
   'surfermarly',
+  'varioso',
 ];
