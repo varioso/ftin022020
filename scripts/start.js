@@ -26,7 +26,7 @@ async function main() {
     compress: true,
     noInfo: true,
     headers: {
-      'Access-Control-Allow-Origin': true,
+      'Access-Control-Allow-Origin': '*',
     },
     historyApiFallback: {
       disableDotRule: true,
