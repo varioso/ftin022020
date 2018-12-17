@@ -29,7 +29,7 @@ const DEFINE_PLUGIN = new webpack.DefinePlugin({
     process.env.STEEMCONNECT_CLIENT_ID || 'ftinetwork',
   ),
   'process.env.STEEMCONNECT_REDIRECT_URL': JSON.stringify(
-    process.env.STEEMCONNECT_REDIRECT_URL || 'https://localhost:3000/callback',
+    process.env.STEEMCONNECT_REDIRECT_URL || 'https://ftin.herokuapp.com/callback',
   ),
   'process.env.STEEMCONNECT_HOST': JSON.stringify(
     process.env.STEEMCONNECT_HOST || 'https://v2.steemconnect.com',
