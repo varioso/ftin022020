@@ -26,7 +26,7 @@ async function main() {
     compress: true,
     noInfo: true,
     headers: {
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': 'https://ftin.herokuapp.com',
       'Access-Control-Allow-Headers': 'Origin' 'X-PINGOTHER' 'X-Requested-With' 'Content-Type' 'Accept' 'Authorization',
     },
     if (req.method === 'OPTIONS') {
