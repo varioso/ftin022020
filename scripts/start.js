@@ -26,12 +26,8 @@ async function main() {
     compress: true,
     noInfo: true,
     headers: {
-      'Access-Control-Allow-Origin': 'https://ftin.herokuapp.com',
-      'Access-Control-Allow-Headers': 'Origin' 'X-PINGOTHER' 'X-Requested-With' 'Content-Type' 'Accept' 'Authorization',
+      'Access-Control-Allow-Origin': '*',
     },
-    if (req.method === 'OPTIONS') {
-      res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET'),
-      return res.status(200).json({}),
 
     historyApiFallback: {
       disableDotRule: true,
