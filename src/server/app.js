@@ -27,10 +27,10 @@ const IS_DEV = process.env.NODE_ENV === 'development';
 app.use(cookieParser());
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin": "https://ftin.herokuapp.com");
+  res.header('Access-Control-Allow-Origin', 'https://ftin.herokuapp.com');
   res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-PINGOTHER, X-Requested-With, Content-Type, Accept, Authorization"
+    'Access-Control-Allow-Headers',
+    'Origin, X-PINGOTHER, X-Requested-With, Content-Type, Accept, Authorization'
   );
   
   if (req.method === 'OPTIONS') {
