@@ -1,6 +1,6 @@
 import sc2 from 'sc2-sdk';
 
-sc2.Initialize({
+const api = sc2.Initialize({
 app: "FTI",
 baseURL: "https://steemconnect.com",
 callbackURL: "ftin.herokuapp.com",
