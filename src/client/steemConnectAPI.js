@@ -4,7 +4,7 @@ const api = sc2.Initialize({
 app: "ftinetwork",
 baseURL: "https://v2.steemconnect.com",
 callbackURL: "https://ftin.herokuapp.com/callback",
-scope: ["vote, comment, delete_comment, comment_options, custom_json, claim_reward_balance, login, offline"]
+scope: ["login,vote,comment,delete_comment,comment_options,custom_json,claim_reward_balance,offline"]
 });
 
 export default api;
