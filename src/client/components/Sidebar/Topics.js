@@ -55,9 +55,9 @@ class Topics extends React.Component {
           </ul>
         )}
         
-      {/* {!loading && topics.length > maxItems && !this.state.showMore ? (
+       {!loading && topics.length > maxItems && !this.state.showMore ? (
           <a role="button" tabIndex={0} onClick={() => this.changeVisibility(true)}>
-            <FormattedMessage id="show_more" defaultMessage="View more" />
+          {/*  <FormattedMessage id="show_more" defaultMessage="View more" /> */}
           
          </a>
         ) : null}
@@ -65,7 +65,7 @@ class Topics extends React.Component {
           <a role="button" tabIndex={0} onClick={() => this.changeVisibility(false)}>
             <FormattedMessage id="show_less" defaultMessage="View less" /> 
           </a>
-        */}
+        
 
         ) : null}
       </div>
