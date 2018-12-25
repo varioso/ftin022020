@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import Topic from '../Button/Topic';
-import Loading from '../Icon/Loading';
+//import Loading from '../Icon/Loading';
 import './Topics.less';
 
 class Topics extends React.Component {
@@ -54,11 +54,12 @@ class Topics extends React.Component {
             ))}
           </ul>
         )}
-        {!loading && topics.length > maxItems && !this.state.showMore ? (
+        
+      {/* {!loading && topics.length > maxItems && !this.state.showMore ? (
           <a role="button" tabIndex={0} onClick={() => this.changeVisibility(true)}>
             <FormattedMessage id="show_more" defaultMessage="View more" />
           
-        {/* </a>
+         </a>
         ) : null}
         {!loading && topics.length > maxItems && this.state.showMore ? (
           <a role="button" tabIndex={0} onClick={() => this.changeVisibility(false)}>
