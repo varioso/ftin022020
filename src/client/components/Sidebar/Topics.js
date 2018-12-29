@@ -40,7 +40,7 @@ class Topics extends React.Component {
       <div className="Topics">
         <h4>
           <FormattedMessage
-            id={favorite ? 'favorite_topics' : 'trending_topics'}
+            id={favorite ? 'favorite_topics' : 'editorial_topics'}
             defaultMessage={favorite ? 'Favorite topics' : 'Editorial topics'}
           />
         </h4>
