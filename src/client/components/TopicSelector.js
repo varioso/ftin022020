@@ -21,7 +21,7 @@ const TopicSelector = ({ sort, isSingle, topics, onTopicClose, onSortChange }) =
         <FormattedMessage id="sort_created" defaultMessage="Created" />
       </SortSelector.Item>
       <SortSelector.Item key="trending">
-        <FormattedMessage id="sort_trending_ftin" defaultMessage="Trending FTIN" />
+        <FormattedMessage id="sort_trending" defaultMessage="Trending" />
       </SortSelector.Item>
       <SortSelector.Item key="hot">
         <FormattedMessage id="sort_hot" defaultMessage="Hot" />
