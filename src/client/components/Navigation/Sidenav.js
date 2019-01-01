@@ -18,18 +18,19 @@ const Sidenav = ({ username }) =>
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" activeClassName="Sidenav__item--active" exact>
-          <i className="iconfont icon-clock" />
-          <FormattedMessage id="feed" defaultMessage="Feed" />
-        </NavLink>
-      </li>
-      <li>
         <NavLink to="/trending/ftin" activeClassName="Sidenav__ftin" exact>
           <i className="iconfont icon-flag" />
           <FormattedMessage id="ftin" defaultMessage="FTIN" />
         </NavLink>
       </li>
+
       <li>
+        <NavLink to="/" activeClassName="Sidenav__item--active" exact>
+          <i className="iconfont icon-clock" />
+          <FormattedMessage id="feed" defaultMessage="Feed" />
+        </NavLink>
+      </li>
+       <li>
         <NavLink to="/trending" activeClassName="Sidenav__item--active" isActive={isNews}>
           <i className="iconfont icon-headlines" />
           <FormattedMessage id="news" defaultMessage="News" />
