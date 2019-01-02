@@ -18,7 +18,7 @@ const Sidenav = ({ username }) =>
         </NavLink>
       </li>
       <li>
-        <NavLink to="/trending/ftin" activeClassName="Sidenav__ftin--active" exact>
+        <NavLink to="/ftin" activeClassName="Sidenav__ftin--active" exact>
           <i className="iconfont icon-flag" />
           <FormattedMessage id="ftin" defaultMessage="FTIN" />
         </NavLink>
