@@ -19,7 +19,7 @@ const Sidenav = ({ username }) =>
         </NavLink>
       </li>
       <li>
-        <NavLink to="/ftin" activeClassName="Sidenav__ftin--active" isActive={isFtin}>
+        <NavLink to="/ftin" activeClassName="Sidenav__item--active" isActive={isFtin}>
           <i className="iconfont icon-flag" />
           <FormattedMessage id="ftin" defaultMessage="FTIN" />
         </NavLink>
