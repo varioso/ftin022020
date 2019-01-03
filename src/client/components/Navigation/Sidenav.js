@@ -31,12 +31,12 @@ const Sidenav = ({ username }) =>
           <FormattedMessage id="feed" defaultMessage="Feed" />
         </NavLink>
       </li>
-{*       <li>
+{/*       <li>
  <NavLink to="/trending" activeClassName="Sidenav__item--active" isActive={isNews}>
           <i className="iconfont icon-headlines" />
           <FormattedMessage id="news" defaultMessage="News" />
         </NavLink>
-      </li> *}
+      </li> */}
       <li>
         <NavLink to="/replies" activeClassName="Sidenav__item--active" isActive={isReplies}>
           <i className="iconfont icon-message" />
