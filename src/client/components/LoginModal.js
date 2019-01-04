@@ -59,8 +59,8 @@ class LoginModal extends React.Component {
           </span>
           <span className="LoginModal__login-description">
             <FormattedMessage
-              id="login_modal_description"
-              defaultMessage="Login with your Steem account using SteemConnect to enjoy FTIN at 100%" />
+              id="login_modal_ftin_description"
+              defaultMessage="Login with your Steem account using SteemConnect" />
           </span>
           <a className="LoginModal__login-button" href={SteemConnect.getLoginURL(next)}>
             <FormattedMessage
