@@ -80,11 +80,11 @@ export default class Invite extends React.Component {
             <div className="Invite">
               <div className="Invite__icon-container" />
               <h1 className="Invite__title">
-                <FormattedMessage id="invite_title" defaultMessage="Don't use FTIN alone!" />
+                <FormattedMessage id="invite_title_ftin" defaultMessage="Don't use FTIN alone!" />
               </h1>
               <p className="Invite__description">
                 <FormattedMessage
-                  id="invite_info"
+                  id="invite_info_ftin"
                   defaultMessage="Onboard new users on FTIN today using the link below."
                 />
               </p>
