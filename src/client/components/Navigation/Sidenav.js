@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import { NavLink } from 'react-router-dom';
 import './Sidenav.less';
 
-// const isNews = (match, location) => location.pathname.match(/trending/);
+const isNews = (match, location) => location.pathname.match(/trending/);
 const isWallet = (match, location) => location.pathname.match(/wallet/);
 const isReplies = (match, location) => location.pathname.match(/replies/);
 const isFtin = (match, location) => location.pathname.match(/ftin/);
