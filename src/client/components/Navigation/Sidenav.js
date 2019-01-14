@@ -19,20 +19,13 @@ const Sidenav = ({ username }) =>
         </NavLink>
       </li>
       <li>
-        <NavLink to="/ftin" activeClassName="Sidenav__item--active" isActive={isFtin}>
-          <i className="iconfont icon-flag" />
-          <FormattedMessage id="ftin" defaultMessage="FTIN" />
-        </NavLink>
-      </li>
-
-      <li>
         <NavLink to="/" activeClassName="Sidenav__item--active" exact>
           <i className="iconfont icon-clock" />
           <FormattedMessage id="feed" defaultMessage="Feed" />
         </NavLink>
       </li> 
        <li>
- <NavLink to="/trending" activeClassName="Sidenav__item--active" isActive={isNews}>
+        <NavLink to="/trending" activeClassName="Sidenav__item--active" isActive={isNews}>
           <i className="iconfont icon-headlines" />
           <FormattedMessage id="news" defaultMessage="News" />
         </NavLink>
@@ -47,6 +40,12 @@ const Sidenav = ({ username }) =>
         <NavLink to="/wallet" activeClassName="Sidenav__item--active" isActive={isWallet}>
           <i className="iconfont icon-wallet" />
           <FormattedMessage id="wallet" defaultMessage="Wallet" />
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/ftin" activeClassName="Sidenav__item--active" isActive={isFtin}>
+          <i className="iconfont icon-flag" />
+          <FormattedMessage id="ftin" defaultMessage="FTIN" />
         </NavLink>
       </li>
     </ul>
