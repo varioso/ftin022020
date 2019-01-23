@@ -1,5 +1,5 @@
 import * as commentsTypes from './commentsActions';
-
+import { getPostKey } from '../helpers/stateHelpers';
 const initialState = {
   childrenById: {},
   comments: {},
@@ -31,7 +31,11 @@ const mapCommentsBasedOnId = (data, action) => {
     ) {
       comment.focus = true;
     }
-    commentsList[data[key].id] = comment;
+    
+    const newKey = getPostKey(data[key]);
+
+     commentsList[newKey] = { ...comment, id: newKey };
+    
   });
   return commentsList;
 };
@@ -43,11 +47,15 @@ const commentsData = (state = {}, action) => {
         ...state,
         ...mapCommentsBasedOnId(action.payload.content, action),
       };
-    case commentsTypes.RELOAD_EXISTING_COMMENT:
+    case commentsTypes.RELOAD_EXISTING_COMMENT: {
+      const key = getPostKey(action.payload);
+    
+      
       return {
         ...state,
-        [action.payload.id]: action.payload,
+        [key]: { ...action.payload, id: key },
       };
+    }
     default:
       return state;
   }
