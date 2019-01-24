@@ -9,7 +9,7 @@ ShallowWrapper {
     isSingle={true}
     onSortChange={[Function]}
     onTopicClose={[Function]}
-    sort="active"
+    sort="trending"
     topics={
       Array [
         "busy",
@@ -55,7 +55,7 @@ ShallowWrapper {
         </div>,
         <SortSelector
           onChange={[Function]}
-          sort="active"
+          sort="trending"
         >
           <PopoverMenuItem
             bold={true}
@@ -83,19 +83,7 @@ ShallowWrapper {
               values={Object {}}
             />
           </PopoverMenuItem>
-          <PopoverMenuItem
-            bold={true}
-            disabled={false}
-            fullScreenHidden={false}
-            itemKey=""
-            onClick={[Function]}
-          >
-            <FormattedMessage
-              defaultMessage="Active"
-              id="sort_active"
-              values={Object {}}
-            />
-          </PopoverMenuItem>
+          
           <PopoverMenuItem
             bold={true}
             disabled={false}
@@ -221,19 +209,7 @@ ShallowWrapper {
                 values={Object {}}
               />
             </PopoverMenuItem>,
-            <PopoverMenuItem
-              bold={true}
-              disabled={false}
-              fullScreenHidden={false}
-              itemKey=""
-              onClick={[Function]}
-            >
-              <FormattedMessage
-                defaultMessage="Active"
-                id="sort_active"
-                values={Object {}}
-              />
-            </PopoverMenuItem>,
+            
             <PopoverMenuItem
               bold={true}
               disabled={false}
@@ -249,7 +225,7 @@ ShallowWrapper {
             </PopoverMenuItem>,
           ],
           "onChange": [Function],
-          "sort": "active",
+          "sort": "trending",
         },
         "ref": null,
         "rendered": Array [
@@ -317,38 +293,7 @@ ShallowWrapper {
             },
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": "active",
-            "nodeType": "function",
-            "props": Object {
-              "bold": true,
-              "children": <FormattedMessage
-                defaultMessage="Active"
-                id="sort_active"
-                values={Object {}}
-              />,
-              "disabled": false,
-              "fullScreenHidden": false,
-              "itemKey": "",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "defaultMessage": "Active",
-                "id": "sort_active",
-                "values": Object {},
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
+          
           Object {
             "instance": null,
             "key": "hot",
@@ -418,7 +363,7 @@ ShallowWrapper {
           </div>,
           <SortSelector
             onChange={[Function]}
-            sort="active"
+            sort="trending"
           >
             <PopoverMenuItem
               bold={true}
@@ -584,19 +529,7 @@ ShallowWrapper {
                   values={Object {}}
                 />
               </PopoverMenuItem>,
-              <PopoverMenuItem
-                bold={true}
-                disabled={false}
-                fullScreenHidden={false}
-                itemKey=""
-                onClick={[Function]}
-              >
-                <FormattedMessage
-                  defaultMessage="Active"
-                  id="sort_active"
-                  values={Object {}}
-                />
-              </PopoverMenuItem>,
+              
               <PopoverMenuItem
                 bold={true}
                 disabled={false}
@@ -612,7 +545,7 @@ ShallowWrapper {
               </PopoverMenuItem>,
             ],
             "onChange": [Function],
-            "sort": "active",
+            "sort": "trending",
           },
           "ref": null,
           "rendered": Array [
@@ -680,38 +613,7 @@ ShallowWrapper {
               },
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": "active",
-              "nodeType": "function",
-              "props": Object {
-                "bold": true,
-                "children": <FormattedMessage
-                  defaultMessage="Active"
-                  id="sort_active"
-                  values={Object {}}
-                />,
-                "disabled": false,
-                "fullScreenHidden": false,
-                "itemKey": "",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "defaultMessage": "Active",
-                  "id": "sort_active",
-                  "values": Object {},
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": [Function],
-            },
+            
             Object {
               "instance": null,
               "key": "hot",
