@@ -1,20 +1,22 @@
-[![CircleCI Build Status](https://circleci.com/gh/busyorg/busy.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/busyorg/busy)
-[![Crowdin](http://d322cqt584bo4o.cloudfront.net/busy/localized.svg)](https://translate.busy.org/project/busy)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/busyorg/busy/new-design/LICENSE)
-[![Busy channel on Discord](https://img.shields.io/badge/chat-discord-738bd7.svg)](https://discord.gg/G95rNZs)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+// [![CircleCI Build Status](https://circleci.com/gh/busyorg/busy.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/busyorg/busy)
+// [![Crowdin](http://d322cqt584bo4o.cloudfront.net/busy/localized.svg)](https://translate.busy.org/project/busy)
+// [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/busyorg/busy/new-design/LICENSE)
+//[![Busy channel on Discord](https://img.shields.io/badge/chat-discord-738bd7.svg)](https://discord.gg/G95rNZs)
+// [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-# Busy 🚀
+# FTIN App - http://network.futuretechinsider.com/
 
-Busy is an Open Source social network and communications platform which extends itself to a variety of rich features and functionality including free digital payments and a marketplace for goods and services.
+FTI Network (FTIN) is a prototype of a blockchain-powered news and media community of collaborators creating and curating content in a semi-decentralised environment.
 
-For more info: https://busy.org/@busy.org
+
+For more information and to get involved: http://network.futuretechinsider.com/
 
 ## Preview
 
 ![Preview](https://user-images.githubusercontent.com/16245250/35974135-6fe56d5a-0d0a-11e8-99f6-a90d59696f82.png)
 
-## Quick Setup
+
+\{*  ## Quick Setup
 
 ```bash
 git clone https://github.com/busyorg/busy.git
@@ -85,3 +87,5 @@ Busy is an MIT-licensed open source project. It's an independent project with it
 [![](https://res.cloudinary.com/hpiynhbhq/image/upload/v1507199050/fqxowyhiwlj9vhb5wdue.png)](https://www.browserstack.com/)
 
 [contributing]: ./docs/CONTRIBUTING.md
+
+*\}
