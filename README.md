@@ -13,7 +13,7 @@ For more information and to get involved: http://network.futuretechinsider.com/
 
 ## Preview
 
-![Preview](https://user-images.githubusercontent.com/16245250/35974135-6fe56d5a-0d0a-11e8-99f6-a90d59696f82.png)
+![Preview](https://github.com/varioso/ftin/blob/develop/public/images/FTI-homepage-screenshot.png)
 
 ## Getting involved
 
