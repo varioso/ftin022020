@@ -13,7 +13,7 @@ const initialState = {
   trendingTopics: [],
   rewardFund: {},
   bannerClosed: false,
-  appUrl: 'https://ftin.herokuapp.com',
+  appUrl: 'http://network.futuretechinsider.com',
   usedLocale: null,
   translations: {},
   cryptosPriceHistory: {},
