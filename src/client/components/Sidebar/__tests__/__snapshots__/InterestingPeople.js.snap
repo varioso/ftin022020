@@ -44,7 +44,7 @@ ShallowWrapper {
           />
            
           <FormattedMessage
-            defaultMessage="Interesting People"
+            defaultMessage="Popular"
             id="interesting_people"
             values={Object {}}
           />
