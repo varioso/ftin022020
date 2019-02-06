@@ -94,7 +94,7 @@ class PostModal extends React.Component {
       shownPostContents,
     } = this.props;
     const { author, permlink, title, url } = currentShownPost;
-    const baseURL = window ? window.location.origin : 'https://ftin.herokuapp.com';
+    const baseURL = window ? window.location.origin : 'http://network.futuretechinsider.com';
     const postURL = `${baseURL}${dropCategory(url)}`;
     const twitterText = `"${encodeURIComponent(title)}" by @${author}`;
     const twitterShareURL = getTwitterShareURL(twitterText, postURL);
