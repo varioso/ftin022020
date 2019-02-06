@@ -9,7 +9,6 @@ export const knownDomains = [
   'utopian.io',
   'coinmarketcap.com',
   'youtube.com',
-  'ftin.herokuapp.com',
 ];
 
 export const people = [
@@ -113,5 +112,4 @@ export const people = [
   'ocrdu',
   'nanzo-scoop',
   'surfermarly',
-  'varioso',
 ];
