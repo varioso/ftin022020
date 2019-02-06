@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { getUseBeta } from '../../reducers';
 
 const Redirect = ({ useBeta }) => {
-  if (typeof window !== 'undefined' && window.location.host === 'ftin.herokuapp.com' && useBeta) {
+  if (typeof window !== 'undefined' && window.location.host === 'network.futuretechinsider.com' && useBeta) {
     const url = window.location.href.split('/');
     url[2] = 'staging.busy.org';
     window.location.replace(url.join('/'));
