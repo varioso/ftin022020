@@ -16,7 +16,7 @@ class Topics extends React.Component {
   static defaultProps = {
     favorite: false,
     topics: [],
-    maxItems: 1,
+    maxItems: 0,
     loading: false,
   };
 
@@ -40,7 +40,7 @@ class Topics extends React.Component {
       <div className="Topics">
         <h4>
           <FormattedMessage
-            id={favorite ? 'favorite_topics' : 'editorial_topics'}
+            id={favorite ? 'favorite_topics' : 'trending_topics'}
             defaultMessage={favorite ? 'Favorite topics' : 'Editorial topics'}
           />
         </h4>
