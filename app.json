@@ -4,7 +4,7 @@
   "env": {
     "DEBUG": {
       "description": "Debug namespaces for https://github.com/visionmedia/debug.",
-      "value": "ftin:server",
+      "value": "busy:server",
       "required": false
     }
   },
