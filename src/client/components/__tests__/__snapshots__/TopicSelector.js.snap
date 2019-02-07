@@ -12,9 +12,10 @@ ShallowWrapper {
     sort="trending"
     topics={
       Array [
-        "busy",
+        "ftin",
         "introduceyourself",
         "steemfest",
+            "busy",
       ]
     }
   />,
@@ -37,7 +38,7 @@ ShallowWrapper {
           <Topic
             closable={false}
             favorite={false}
-            name="busy"
+            name="ftin"
             onClose={[Function]}
           />
           <Topic
@@ -112,7 +113,7 @@ ShallowWrapper {
             <Topic
               closable={false}
               favorite={false}
-              name="busy"
+              name="ftin"
               onClose={[Function]}
             />,
             <Topic
@@ -134,12 +135,12 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": "busy",
+            "key": "ftin",
             "nodeType": "class",
             "props": Object {
               "closable": false,
               "favorite": false,
-              "name": "busy",
+              "name": "ftin",
               "onClose": [Function],
             },
             "ref": null,
@@ -432,7 +433,7 @@ ShallowWrapper {
               <Topic
                 closable={false}
                 favorite={false}
-                name="busy"
+                name="ftin"
                 onClose={[Function]}
               />,
               <Topic
