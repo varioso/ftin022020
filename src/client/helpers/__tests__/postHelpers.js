@@ -17,18 +17,18 @@ describe('getAppData', () => {
   });
 
   it('should return an object with the appName and version', () => {
-    const post = { json_metadata: '{ "app": "busy/1.2.4" }' };
-    expect(getAppData(post)).toEqual({ appName: 'Busy', version: '1.2.4' });
+    const post = { json_metadata: '{ "app": "ftin/1.2.4" }' };
+    expect(getAppData(post)).toEqual({ appName: 'FTIN', version: '1.2.4' });
   });
 
   it('should return an object with the appName and empty version if version is absent', () => {
-    const post = { json_metadata: '{ "app": "busy" }' };
-    expect(getAppData(post)).toEqual({ appName: 'Busy', version: '' });
+    const post = { json_metadata: '{ "app": "ftin" }' };
+    expect(getAppData(post)).toEqual({ appName: 'FTIN', version: '' });
   });
 
   it('should handle more app parameters without failing, eg. busy/1.2/other', () => {
-    const post = { json_metadata: '{ "app": "busy/1.2.3/something" }' };
-    expect(getAppData(post)).toEqual({ appName: 'Busy', version: '1.2.3' });
+    const post = { json_metadata: '{ "app": "ftin/1.2.3/something" }' };
+    expect(getAppData(post)).toEqual({ appName: 'FTIN', version: '1.2.3' });
   });
 });
 
