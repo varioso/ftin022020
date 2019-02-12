@@ -8,7 +8,7 @@ import './SidebarContentBlock.less';
 
 const InterestingPeople = ({ users, onRefresh }) => (
   
-{/* <div className="InterestingPeople SidebarContentBlock">
+ <div className="InterestingPeople SidebarContentBlock">
     <h4 className="SidebarContentBlock__title">
       <i className="iconfont icon-group SidebarContentBlock__icon" />{' '}
       <FormattedMessage id="interesting_people" defaultMessage="Popular" />
@@ -24,7 +24,7 @@ const InterestingPeople = ({ users, onRefresh }) => (
         </Link>
       </h4>
     </div>
-  </div> */}
+  </div>
   
 );
 
