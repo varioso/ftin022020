@@ -12,12 +12,15 @@ const isFtin = (match, location) => location.pathname.match(/ftin/);
 const Sidenav = ({ username }) =>
   username ? (
     <ul className="Sidenav">
-      <li>
-        <NavLink to={`/@${username}`}>
-          <i className="iconfont icon-mine" />
-          <FormattedMessage id="my_profile" defaultMessage="My profile" />
+    
+     <li>
+        <NavLink to="/ftin" activeClassName="Sidenav__item--active" isActive={isFtin}>
+          <i className="iconfont icon-flag" />
+          <FormattedMessage id="ftin" defaultMessage="FTIN" />
         </NavLink>
       </li>
+    
+      
      
 {/* <li>
         <NavLink to="/" activeClassName="Sidenav__item--active" exact>
@@ -44,12 +47,14 @@ const Sidenav = ({ username }) =>
           <FormattedMessage id="wallet" defaultMessage="Wallet" />
         </NavLink>
       </li>
+     
       <li>
-        <NavLink to="/ftin" activeClassName="Sidenav__item--active" isActive={isFtin}>
-          <i className="iconfont icon-flag" />
-          <FormattedMessage id="ftin" defaultMessage="FTIN" />
+        <NavLink to={`/@${username}`}>
+          <i className="iconfont icon-mine" />
+          <FormattedMessage id="my_profile" defaultMessage="My profile" />
         </NavLink>
       </li>
+
     </ul>
   ) : null;
 
