@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import { NavLink } from 'react-router-dom';
 import './Sidenav.less';
 
-const isNews = (match, location) => location.pathname.match(/trending/);
+//const isNews = (match, location) => location.pathname.match(/trending/);
 const isWallet = (match, location) => location.pathname.match(/wallet/);
 const isReplies = (match, location) => location.pathname.match(/replies/);
 const isFtin = (match, location) => location.pathname.match(/ftin/);
@@ -18,7 +18,8 @@ const Sidenav = ({ username }) =>
           <FormattedMessage id="my_profile" defaultMessage="My profile" />
         </NavLink>
       </li>
-      <li>
+     
+{/* <li>
         <NavLink to="/" activeClassName="Sidenav__item--active" exact>
           <i className="iconfont icon-clock" />
           <FormattedMessage id="feed" defaultMessage="Feed" />
@@ -29,7 +30,8 @@ const Sidenav = ({ username }) =>
           <i className="iconfont icon-headlines" />
           <FormattedMessage id="news" defaultMessage="News" />
         </NavLink>
-      </li> 
+      </li>  */}
+
       <li>
         <NavLink to="/replies" activeClassName="Sidenav__item--active" isActive={isReplies}>
           <i className="iconfont icon-message" />
