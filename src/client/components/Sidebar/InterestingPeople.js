@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 //import './InterestingPeople.less';
 //import './SidebarContentBlock.less';
 
-{/* const InterestingPeople = ({ users, onRefresh }) => (
+const InterestingPeople = ({ users, onRefresh }) => (
   
  <div className="InterestingPeople SidebarContentBlock">
     <h4 className="SidebarContentBlock__title">
@@ -36,6 +36,6 @@ InterestingPeople.propTypes = {
 InterestingPeople.defaultProps = {
   users: [],
   onRefresh: () => {},
-}; */}
+}; 
 
 export default InterestingPeople; 
