@@ -36,6 +36,6 @@ InterestingPeople.propTypes = {
 InterestingPeople.defaultProps = {
   users: [],
   onRefresh: () => {},
-};
+}; */}
 
-export default InterestingPeople; */}
+export default InterestingPeople; 
