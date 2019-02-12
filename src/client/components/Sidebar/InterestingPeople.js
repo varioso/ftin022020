@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
-import User from './User';
-import './InterestingPeople.less';
-import './SidebarContentBlock.less';
+//import User from './User';
+//import './InterestingPeople.less';
+//import './SidebarContentBlock.less';
 
 {/* const InterestingPeople = ({ users, onRefresh }) => (
   
