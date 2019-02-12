@@ -6,7 +6,7 @@ import User from './User';
 import './InterestingPeople.less';
 import './SidebarContentBlock.less';
 
-const InterestingPeople = ({ users, onRefresh }) => (
+{/* const InterestingPeople = ({ users, onRefresh }) => (
   
  <div className="InterestingPeople SidebarContentBlock">
     <h4 className="SidebarContentBlock__title">
@@ -38,4 +38,4 @@ InterestingPeople.defaultProps = {
   onRefresh: () => {},
 };
 
-export default InterestingPeople;
+export default InterestingPeople; */}
