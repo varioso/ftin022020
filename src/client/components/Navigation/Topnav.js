@@ -378,7 +378,7 @@ class Topnav extends React.Component {
                   onPressEnter={this.handleSearchForInput}
                   placeholder={intl.formatMessage({
                     id: 'search_placeholder',
-                    defaultMessage: 'What are you looking for?',
+                    defaultMessage: 'Search FTIN',
                   })}
                   autoCapitalize="off"
                   autoCorrect="off" 
