@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 
-//import { getFeedContent } from './feedActions';
+import { getFeedContent } from './feedActions';
 import { getIsLoaded, getIsAuthenticated } from '../reducers';
 //import SubFeed from './SubFeed';
 //import HeroBannerContainer from './HeroBannerContainer';
@@ -73,7 +73,7 @@ class Page extends React.Component {
       {/*   <HeroBannerContainer /> */}
 
         <div className="shifted">
-        {/*  <div className="feed-layout container"> */}
+        <div className="feed-layout container"> 
         
             <Affix className="leftContainer" stickPosition={77}>
               <div className="left">
