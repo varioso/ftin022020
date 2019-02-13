@@ -83,14 +83,10 @@ class Page extends React.Component {
             
        <Affix className="rightContainer" stickPosition={77}>
               <div className="right">
-              
-              <RightSidebar /> 
-              
+                <RightSidebar />
               </div>
-            </Affix> 
-           
+            </Affix>         
              <div className="center"> 
-      
               {displayTopicSelector && <TrendingTagsMenu />}
               {shouldDisplaySelector && (
                 <TopicSelector
@@ -100,12 +96,9 @@ class Page extends React.Component {
                   onSortChange={this.handleSortChange}
                   onTopicClose={this.handleTopicClose}
                 />
-                
               )} 
-      
               {authenticated && <QuickPostEditor />}
            <SubFeed />
-            
             </div> 
           </div>
         </div>
