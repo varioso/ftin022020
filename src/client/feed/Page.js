@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 
-import { getFeedContent } from './feedActions';
+//import { getFeedContent } from './feedActions';
 import { getIsLoaded, getIsAuthenticated } from '../reducers';
-import SubFeed from './SubFeed';
+//import SubFeed from './SubFeed';
 //import HeroBannerContainer from './HeroBannerContainer';
 import LeftSidebar from '../app/Sidebar/LeftSidebar';
-import RightSidebar from '../app/Sidebar/RightSidebar';
+//import RightSidebar from '../app/Sidebar/RightSidebar';
 import TopicSelector from '../components/TopicSelector';
 import TrendingTagsMenu from '../components/TrendingTagsMenu';
 import Affix from '../components/Utils/Affix';
@@ -84,7 +84,8 @@ class Page extends React.Component {
                 <RightSidebar />
               </div>
             </Affix>
-            <div className="center">
+           
+            {/* <div className="center">
               {displayTopicSelector && <TrendingTagsMenu />}
               {shouldDisplaySelector && (
                 <TopicSelector
@@ -94,10 +95,12 @@ class Page extends React.Component {
                   onSortChange={this.handleSortChange}
                   onTopicClose={this.handleTopicClose}
                 />
-              )}
+                
+              )} */}
+      
               {authenticated && <QuickPostEditor />}
               <SubFeed />
-            </div>
+            </div> 
           </div>
         </div>
       </div>
