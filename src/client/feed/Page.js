@@ -8,7 +8,7 @@ import { getIsLoaded, getIsAuthenticated } from '../reducers';
 //import SubFeed from './SubFeed';
 //import HeroBannerContainer from './HeroBannerContainer';
 import LeftSidebar from '../app/Sidebar/LeftSidebar';
-//import RightSidebar from '../app/Sidebar/RightSidebar';
+import RightSidebar from '../app/Sidebar/RightSidebar';
 import TopicSelector from '../components/TopicSelector';
 import TrendingTagsMenu from '../components/TrendingTagsMenu';
 import Affix from '../components/Utils/Affix';
@@ -73,7 +73,8 @@ class Page extends React.Component {
       {/*   <HeroBannerContainer /> */}
 
         <div className="shifted">
-          <div className="feed-layout container">
+        {/*  <div className="feed-layout container"> */}
+        
             <Affix className="leftContainer" stickPosition={77}>
               <div className="left">
                 <LeftSidebar />
@@ -85,7 +86,8 @@ class Page extends React.Component {
               </div>
             </Affix>
            
-            {/* <div className="center">
+             <div className="center"> 
+      
               {displayTopicSelector && <TrendingTagsMenu />}
               {shouldDisplaySelector && (
                 <TopicSelector
@@ -96,7 +98,7 @@ class Page extends React.Component {
                   onTopicClose={this.handleTopicClose}
                 />
                 
-              )} */}
+              )} 
       
               {authenticated && <QuickPostEditor />}
               <SubFeed />
