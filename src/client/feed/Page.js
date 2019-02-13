@@ -80,13 +80,14 @@ class Page extends React.Component {
                 <LeftSidebar />
               </div>
             </Affix>
-            <Affix className="rightContainer" stickPosition={77}>
+            
+      {/* <Affix className="rightContainer" stickPosition={77}>
               <div className="right">
               
-            {/*  <RightSidebar /> */}
+              <RightSidebar /> 
               
               </div>
-            </Affix>
+            </Affix> */}
            
              <div className="center"> 
       
