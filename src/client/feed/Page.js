@@ -101,7 +101,8 @@ class Page extends React.Component {
               )} 
       
               {authenticated && <QuickPostEditor />}
-              <SubFeed />
+            {/*  <SubFeed /> */}
+            
             </div> 
           </div>
         </div>
