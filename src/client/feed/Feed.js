@@ -17,7 +17,7 @@ import PropTypes from 'prop-types';
   >
     {content.map(id => <StoryContainer key={id} id={id} showPostModal={showPostModal} />)}
   </ReduxInfiniteScroll>
-); */}
+); 
 
 Feed.propTypes = {
   showPostModal: PropTypes.func,
@@ -33,6 +33,6 @@ Feed.defaultProps = {
   hasMore: false,
   loadMoreContent: () => {},
   showPostModal: () => {},
-};
+};  */}
 
 export default Feed;
