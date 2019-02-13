@@ -33,6 +33,6 @@ Feed.defaultProps = {
   hasMore: false,
   loadMoreContent: () => {},
   showPostModal: () => {},
-};  */}
+};  
 
-export default Feed;
+export default Feed; */}
