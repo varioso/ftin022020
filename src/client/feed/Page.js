@@ -8,7 +8,7 @@ import { getIsLoaded, getIsAuthenticated } from '../reducers';
 import SubFeed from './SubFeed';
 //import HeroBannerContainer from './HeroBannerContainer';
 import LeftSidebar from '../app/Sidebar/LeftSidebar';
-//import RightSidebar from '../app/Sidebar/RightSidebar';
+import RightSidebar from '../app/Sidebar/RightSidebar';
 import TopicSelector from '../components/TopicSelector';
 import TrendingTagsMenu from '../components/TrendingTagsMenu';
 import Affix from '../components/Utils/Affix';
@@ -81,13 +81,13 @@ class Page extends React.Component {
               </div>
             </Affix>
             
-      {/* <Affix className="rightContainer" stickPosition={77}>
+       <Affix className="rightContainer" stickPosition={77}>
               <div className="right">
               
               <RightSidebar /> 
               
               </div>
-            </Affix> */}
+            </Affix> 
            
              <div className="center"> 
       
