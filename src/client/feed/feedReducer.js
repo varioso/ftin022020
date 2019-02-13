@@ -15,6 +15,7 @@ const initialState = {
   bookmarks: {},
   replies: {},
   promoted: {},
+   ftin: {},
 };
 
 const feedIdsList = (state = [], action) => {
