@@ -49,7 +49,7 @@ class Page extends React.Component {
     }
   };
 
-  handleTopicClose = () => this.props.history.push('/trending');
+  handleTopicClose = () => this.props.history.push('/ftin');
 
   render() {
     const { authenticated, loaded, location, match } = this.props;
@@ -58,7 +58,7 @@ class Page extends React.Component {
     //if(sortBy=='new') sortBy = 'created'
     
     const shouldDisplaySelector = location.pathname !== '/' || (!authenticated && loaded);
-    const displayTopicSelector = location.pathname === '/trending';
+    const displayTopicSelector = location.pathname === '/ftin';
 
     const robots = location.pathname === '/' ? 'index,follow' : 'noindex,follow';
 
