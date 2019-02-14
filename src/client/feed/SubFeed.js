@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import Cookie from 'js-cookie';
 import _ from 'lodash';
-import { showPostModal } from '../app/appActions';
+//import { showPostModal } from '../app/appActions';
 import { getFeedContent, getMoreFeedContent } from './feedActions';
 
 import {
@@ -24,7 +24,7 @@ import FetchFailed from '../statics/FetchFailed';
 import EmptyFeed from '../statics/EmptyFeed';
 import LetsGetStarted from './LetsGetStarted';
 import ScrollToTop from '../components/Utils/ScrollToTop';
-import PostModal from '../post/PostModalContainer';
+//import PostModal from '../post/PostModalContainer';
 
 @withRouter
 @connect(
@@ -151,7 +151,7 @@ class SubFeed extends React.Component {
         />
         {ready && failed && <FetchFailed />}
         {displayEmptyFeed && <EmptyFeed />}
-        <PostModal />
+      {/* <PostModal /> */}
       </div>
     );
   }
