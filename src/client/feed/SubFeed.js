@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import Cookie from 'js-cookie';
 import _ from 'lodash';
-//import { showPostModal } from '../app/appActions';
+import { showPostModal } from '../app/appActions';
 import { getFeedContent, getMoreFeedContent } from './feedActions';
 
 import {
