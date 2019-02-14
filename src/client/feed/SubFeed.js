@@ -24,7 +24,7 @@ import FetchFailed from '../statics/FetchFailed';
 import EmptyFeed from '../statics/EmptyFeed';
 import LetsGetStarted from './LetsGetStarted';
 import ScrollToTop from '../components/Utils/ScrollToTop';
-//import PostModal from '../post/PostModalContainer';
+import PostModal from '../post/PostModalContainer';
 
 @withRouter
 @connect(
@@ -48,7 +48,7 @@ class SubFeed extends React.Component {
     user: PropTypes.shape().isRequired,
     feed: PropTypes.shape().isRequired,
     match: PropTypes.shape().isRequired,
-   // showPostModal: PropTypes.func.isRequired,
+   showPostModal: PropTypes.func.isRequired,
     getFeedContent: PropTypes.func,
     getMoreFeedContent: PropTypes.func,
   };
@@ -147,11 +147,11 @@ class SubFeed extends React.Component {
           isFetching={isFetching}
           hasMore={hasMore}
           loadMoreContent={loadMoreContent}
-        //  showPostModal={this.props.showPostModal}
+        showPostModal={this.props.showPostModal}
         />
         {ready && failed && <FetchFailed />}
         {displayEmptyFeed && <EmptyFeed />}
-      {/* <PostModal /> */}
+      <PostModal />
       </div>
     );
   }
