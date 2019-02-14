@@ -171,7 +171,7 @@ class LetsGetStarted extends React.Component {
               isLoading={isAuthFetching}
               iconClassName="icon-praise"
             />
-            <Link to="/trending">
+            <Link to="/ftin">
               <span
                 className={classNames('LetsGetStarted__action__text', {
                   LetsGetStarted__action__completed: hasVoted,
