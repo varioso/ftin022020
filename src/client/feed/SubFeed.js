@@ -38,7 +38,7 @@ import ScrollToTop from '../components/Utils/ScrollToTop';
     getFeedContent: (sortBy, category) => dispatch(getFeedContent({ sortBy, category, limit: 10 })),
     getMoreFeedContent: (sortBy, category) =>
       dispatch(getMoreFeedContent({ sortBy, category, limit: 10 })),
-    showPostModal: post => dispatch(showPostModal(post)),
+   // showPostModal: post => dispatch(showPostModal(post)),
   }),
 )
 class SubFeed extends React.Component {
@@ -48,7 +48,7 @@ class SubFeed extends React.Component {
     user: PropTypes.shape().isRequired,
     feed: PropTypes.shape().isRequired,
     match: PropTypes.shape().isRequired,
-    showPostModal: PropTypes.func.isRequired,
+   // showPostModal: PropTypes.func.isRequired,
     getFeedContent: PropTypes.func,
     getMoreFeedContent: PropTypes.func,
   };
@@ -147,7 +147,7 @@ class SubFeed extends React.Component {
           isFetching={isFetching}
           hasMore={hasMore}
           loadMoreContent={loadMoreContent}
-          showPostModal={this.props.showPostModal}
+        //  showPostModal={this.props.showPostModal}
         />
         {ready && failed && <FetchFailed />}
         {displayEmptyFeed && <EmptyFeed />}
