@@ -99,6 +99,14 @@ class Page extends React.Component {
               )} 
               {authenticated && <QuickPostEditor />}
               {/* <SubFeed /> */}
+               
+               const isFtin = (match, location) => location.pathname.match(/ftin/);
+               
+         <Affix to="/ftin" activeClassName="Sidenav__item--active" isActive={isFtin}>
+          <i className="iconfont icon-flag" />
+          <FormattedMessage id="ftin" defaultMessage="FTIN" />
+         </Affix>
+               
             </div> 
           </div>
         </div>
