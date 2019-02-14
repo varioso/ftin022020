@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 
 import { getFeedContent } from './feedActions';
 import { getIsLoaded, getIsAuthenticated } from '../reducers';
-import SubFeed from './SubFeed';
+//import SubFeed from './SubFeed';
 //import HeroBannerContainer from './HeroBannerContainer';
 import LeftSidebar from '../app/Sidebar/LeftSidebar';
 import RightSidebar from '../app/Sidebar/RightSidebar';
@@ -98,7 +98,7 @@ class Page extends React.Component {
                 />
               )} 
               {authenticated && <QuickPostEditor />}
-           <SubFeed />
+              {/* <SubFeed /> */}
             </div> 
           </div>
         </div>
