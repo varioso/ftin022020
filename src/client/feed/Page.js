@@ -32,7 +32,7 @@ class Page extends React.Component {
   static fetchData({ store, match }) {
     const { sortBy, category } = match.params;
     
-   // if(sortBy=='new') sortBy = 'created'
+   if(sortBy=='new') sortBy = 'ftin'
     
     return store.dispatch(getFeedContent({ sortBy, category, limit: 10 }));
   }
