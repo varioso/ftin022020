@@ -233,14 +233,12 @@ class Topnav extends React.Component {
                   <PopoverMenuItem key="ftin" fullScreenHidden>
                     <FormattedMessage id="ftin" defaultMessage="FTIN" />
                   </PopoverMenuItem>
-
-                {*/ <PopoverMenuItem key="feed" fullScreenHidden>
+                  <PopoverMenuItem key="feed" fullScreenHidden>
                     <FormattedMessage id="feed" defaultMessage="Feed" />
                   </PopoverMenuItem>
                   <PopoverMenuItem key="news" fullScreenHidden>
                     <FormattedMessage id="news" defaultMessage="News" />
-                  </PopoverMenuItem> */}
-
+                  </PopoverMenuItem>
                   <PopoverMenuItem key="replies" fullScreenHidden>
                     <FormattedMessage id="replies" defaultMessage="Replies" />
                   </PopoverMenuItem>
