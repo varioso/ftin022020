@@ -31,7 +31,7 @@ class Page extends React.Component {
   };
 
   static fetchData({ store, match }) {
-    const { sortBy, category } = sortBy = '/ftin';
+    const { sortBy, category } = '/ftin';
     
    //if(sortBy=='new') sortBy = 'ftin'
     
