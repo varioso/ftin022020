@@ -31,11 +31,11 @@ class Page extends React.Component {
   };
 
   static fetchData({ store, match }) {
-    const { sortBy, category } = sortBy = '/ftin'
+    const { sortBy, category } = sortBy = '/ftin';
     
    //if(sortBy=='new') sortBy = 'ftin'
     
-    return store.dispatch(getFeedContent({ sortBy, category: "ftin", limit: 10 }));
+    return store.dispatch(getFeedContent({ sortBy, category: ftin, limit: 10 }));
   }
 
   handleSortChange = key => {
