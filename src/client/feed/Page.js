@@ -32,14 +32,14 @@ class Page extends React.Component {
   static fetchData({ store, match }) {
     const { sortBy, category } = match.params;
     
-   if(sortBy=='new') sortBy = 'ftin'
+   //if(sortBy=='new') sortBy = 'ftin'
     
     return store.dispatch(getFeedContent({ sortBy, category, limit: 10 }));
   }
 
   handleSortChange = key => {
     
-  if(key=='new') key = 'ftin'
+  //if(key=='new') key = 'ftin'
     
     const { category } = this.props.match.params;
     if (category) {
@@ -55,7 +55,7 @@ class Page extends React.Component {
     const { authenticated, loaded, location, match } = this.props;
     const { category, sortBy } = match.params;
 
-    if(sortBy=='new') sortBy = 'ftin'
+    //if(sortBy=='new') sortBy = 'ftin'
     
     const shouldDisplaySelector = location.pathname !== '/' || (!authenticated && loaded);
     const displayTopicSelector = location.pathname === '/ftin';
