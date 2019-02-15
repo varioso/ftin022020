@@ -27,14 +27,15 @@ class Page extends React.Component {
     history: PropTypes.shape().isRequired,
     location: PropTypes.shape().isRequired,
     match: PropTypes.shape().isRequired,
+    
   };
 
   static fetchData({ store, match }) {
-    const { sortBy, category } = match.params;
+    const { sortBy, category } = sortBy = '/ftin'
     
    //if(sortBy=='new') sortBy = 'ftin'
     
-    return store.dispatch(getFeedContent({ sortBy, category, limit: 10 }));
+    return store.dispatch(getFeedContent({ sortBy, category: "ftin", limit: 10 }));
   }
 
   handleSortChange = key => {
