@@ -178,7 +178,7 @@ export default class User extends React.Component {
             <Affix className="rightContainer" stickPosition={72}>
               <div className="right">{loaded && <RightSidebar key={user.name} />}</div>
             </Affix>
-    {*/ {loaded && <div className="center">{renderRoutes(this.props.route.routes)}</div>} */}
+    {/* {loaded && <div className="center">{renderRoutes(this.props.route.routes)}</div>} */}
           </div>
         </div>
       </div>
