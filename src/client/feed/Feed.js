@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 //import ReduxInfiniteScroll from '../vendor/ReduxInfiniteScroll';
 import StoryContainer from './StoryContainer';
-import StoryLoading from '../components/Story/StoryLoading';
+//import StoryLoading from '../components/Story/StoryLoading';
 import './Feed.less';
 
 const Feed = ({ content, isFetching, hasMore, loadMoreContent, showPostModal }) => (
