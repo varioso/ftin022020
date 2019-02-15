@@ -93,7 +93,7 @@ class Page extends React.Component {
                 <TopicSelector
                   isSingle={false}
                   sort={sortBy}
-                  topics={category ? [ftin] : []}
+                  topics={category ? [category] : []}
                   onSortChange={this.handleSortChange}
                   onTopicClose={this.handleTopicClose}
                 />
