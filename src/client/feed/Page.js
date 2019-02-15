@@ -9,7 +9,7 @@ import SubFeed from './SubFeed';
 //import HeroBannerContainer from './HeroBannerContainer';
 import LeftSidebar from '../app/Sidebar/LeftSidebar';
 import RightSidebar from '../app/Sidebar/RightSidebar';
-import TopicSelector from '../components/TopicSelector';
+//import TopicSelector from '../components/TopicSelector';
 import TrendingTagsMenu from '../components/TrendingTagsMenu';
 import Affix from '../components/Utils/Affix';
 import ScrollToTop from '../components/Utils/ScrollToTop';
@@ -93,7 +93,7 @@ class Page extends React.Component {
                 <TopicSelector
                   isSingle={false}
                   sort={sortBy}
-                  topics={category ? [category] : []}
+                  topics={category ? [ftin] : []}
                   onSortChange={this.handleSortChange}
                   onTopicClose={this.handleTopicClose}
                 />
