@@ -64,7 +64,7 @@ class SubFeed extends React.Component {
 
     if (!loaded && Cookie.get('access_token')) return;
 
-    if (match.url === '/ftin12' && authenticated) {
+    if (match.url === '/' && authenticated) {
       const fetched = getUserFeedFetchedFromState(user.name, feed);
       if (fetched) return;
       this.props.getFeedContent('feed', user.name);
