@@ -20,12 +20,12 @@ const TopicSelector = ({ sort, isSingle, topics, onTopicClose, onSortChange }) =
       
 
 
-      <SortSelector.Item key="trending">
-        <FormattedMessage id="sort_trending" defaultMessage="Trending" />
+      <SortSelector.Item key="ftin">
+        <FormattedMessage id="sort_ftin" defaultMessage="ftin" />
       </SortSelector.Item>
-      <SortSelector.Item key="hot">
+{/* <SortSelector.Item key="hot">
         <FormattedMessage id="sort_hot" defaultMessage="Hot" />
-      </SortSelector.Item>
+      </SortSelector.Item> */}
     </SortSelector>
   </div>
 );
