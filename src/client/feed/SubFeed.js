@@ -35,9 +35,9 @@ import PostModal from '../post/PostModalContainer';
     feed: getFeed(state),
   }),
   dispatch => ({
-    getFeedContent: (sortBy, category) => dispatch(getFeedContent({ sortBy, category: ftin, limit: 10 })),
+    getFeedContent: (sortBy, category) => dispatch(getFeedContent({ sortBy, category, limit: 10 })),
     getMoreFeedContent: (sortBy, category) =>
-      dispatch(getMoreFeedContent({ sortBy, category: ftin, limit: 10 })),
+      dispatch(getMoreFeedContent({ sortBy, category, limit: 10 })),
    // showPostModal: post => dispatch(showPostModal(post)),
   }),
 )
@@ -114,7 +114,7 @@ class SubFeed extends React.Component {
     let hasMore = false;
     let failed = false;
     let loadMoreContent = () => {};
-    const isAuthHomeFeed = match.url === '/' && authenticated;
+    const isAuthHomeFeed = match.url === '/ftin' && authenticated;
 
     if (isAuthHomeFeed) {
       content = getUserFeedFromState(user.name, feed);
