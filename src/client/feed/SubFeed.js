@@ -35,9 +35,9 @@ import PostModal from '../post/PostModalContainer';
     feed: getFeed(state),
   }),
   dispatch => ({
-    getFeedContent: (sortBy, category) => dispatch(getFeedContent({ sortBy, category, limit: 10 })),
+    getFeedContent: (sortBy, category) => dispatch(getFeedContent({ sortBy, category: ftin, limit: 10 })),
     getMoreFeedContent: (sortBy, category) =>
-      dispatch(getMoreFeedContent({ sortBy, category, limit: 10 })),
+      dispatch(getMoreFeedContent({ sortBy, category: ftin, limit: 10 })),
    // showPostModal: post => dispatch(showPostModal(post)),
   }),
 )
