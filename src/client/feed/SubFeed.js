@@ -69,7 +69,7 @@ class SubFeed extends React.Component {
       if (fetched) return;
       this.props.getFeedContent('feed', user.name);
     } else {
-      const sortBy = match.params.sortBy || 'trending';
+      const sortBy = match.params.sortBy || 'trendingx1';
       const fetched = getFeedFetchedFromState(sortBy, category, feed);
       if (fetched) return;
       this.props.getFeedContent(sortBy, category);
@@ -99,9 +99,9 @@ class SubFeed extends React.Component {
         this.props.getFeedContent('feed', user.name);
       }
     } else if (oldSortBy !== newSortBy || oldCategory !== newCategory || (!wasLoaded && isLoaded)) {
-      const fetching = getFeedLoadingFromState(newSortBy || 'trending', newCategory, feed);
+      const fetching = getFeedLoadingFromState(newSortBy || 'trendingx1', newCategory, feed);
       if (!fetching) {
-        this.props.getFeedContent(newSortBy || 'trending', newCategory);
+        this.props.getFeedContent(newSortBy || 'trendingx1', newCategory);
       }
     }
   }
@@ -124,7 +124,8 @@ class SubFeed extends React.Component {
       failed = getUserFeedFailedFromState(user.name, feed);
       loadMoreContent = () => this.props.getMoreFeedContent('feed', user.name);
     } else {
-      const sortBy = match.params.sortBy || 'trending';
+      const sortBy = match.params.sortBy || 'trendingx1
+      ';
       content = getFeedFromState(sortBy, match.params.category, feed);
       isFetching = getFeedLoadingFromState(sortBy, match.params.category, feed);
       fetched = getFeedFetchedFromState(sortBy, match.params.category, feed);
