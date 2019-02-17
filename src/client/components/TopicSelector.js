@@ -14,19 +14,21 @@ const TopicSelector = ({ sort, isSingle, topics, onTopicClose, onSortChange }) =
         ))}
     </div>
     <SortSelector sort={sort} onChange={onSortChange}>
-      <SortSelector.Item key="created">
+      <SortSelector.Item key="ftin">
+        <FormattedMessage id="sort_ftin" defaultMessage="ftin" />
+      </SortSelector.Item>
+      
+{/* <SortSelector.Item key="created">
         <FormattedMessage id="sort_created" defaultMessage="Created" />
       </SortSelector.Item>
       
 
 
-      <SortSelector.Item key="ftin">
-        <FormattedMessage id="sort_ftin" defaultMessage="ftin" />
-      </SortSelector.Item>
+      
      <SortSelector.Item key="hot">
         <FormattedMessage id="sort_hot" defaultMessage="Hot" />
       </SortSelector.Item> 
-    </SortSelector>
+    </SortSelector> */}
   </div>
 );
 
