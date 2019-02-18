@@ -171,13 +171,13 @@ class LetsGetStarted extends React.Component {
               isLoading={isAuthFetching}
               iconClassName="icon-praise"
             />
-            <Link to="/trending">
+            <Link to="/ftin">
               <span
                 className={classNames('LetsGetStarted__action__text', {
                   LetsGetStarted__action__completed: hasVoted,
                 })}
               >
-                <FormattedMessage id="like_good_posts" defaultMessage="Like some good posts" />
+                <FormattedMessage id="like_good_posts" defaultMessage="Vote on a proposal" />
               </span>
             </Link>
           </div>
@@ -193,7 +193,7 @@ class LetsGetStarted extends React.Component {
                   LetsGetStarted__action__completed: hasPost,
                 })}
               >
-                <FormattedMessage id="write_first_post" defaultMessage="Write your first post" />
+                <FormattedMessage id="write_first_post" defaultMessage="Make content/project proposal" />
               </span>
             </Link>
           </div>
