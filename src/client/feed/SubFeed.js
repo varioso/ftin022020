@@ -137,7 +137,8 @@ class SubFeed extends React.Component {
     const displayEmptyFeed = empty && fetched && loaded && !isFetching && !failed;
 
     const ready = loaded && fetched && !isFetching;
-
+    const ftin = = match.url === '/ftin' && authenticated;
+    
     return (
       <div>
         {isAuthHomeFeed && <LetsGetStarted />}
@@ -152,8 +153,6 @@ class SubFeed extends React.Component {
         {ready && failed && <FetchFailed />}
         {displayEmptyFeed && <EmptyFeed />}
       <PostModal />
-      
-      const ftin = = match.url === '/ftin' && authenticated;
       </div>
     );
   }
