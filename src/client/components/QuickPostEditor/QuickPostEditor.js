@@ -291,7 +291,7 @@ class QuickPostEditor extends React.Component {
                 onBlur={this.handleUnfocusInput}
                 ref={ref => this.setInput(ref)}
                 placeholder={intl.formatMessage({
-                  id: 'write_quick_post',
+                  id: 'write_quick_proposal',
                   defaultMessage: 'Write quick proposal',
                 })}
                 value={this.state.currentInputValue}
