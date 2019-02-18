@@ -145,13 +145,13 @@ class LetsGetStarted extends React.Component {
               </span>
             </Link>
           </div>
-          <div className="LetsGetStarted__action">
+        {/*  <div className="LetsGetStarted__action">
             <LetsGetStartedIcon
               renderCheck={hasFollowed}
               isLoading={isFetchingFollowingList}
               iconClassName="icon-addpeople"
             />
-            <Link to="/discover">
+           <Link to="/discover">
               <span
                 className={classNames('LetsGetStarted__action__text', {
                   LetsGetStarted__action__completed: hasFollowed,
@@ -163,8 +163,8 @@ class LetsGetStarted extends React.Component {
                   values={{ amount: 3 }}
                 />
               </span>
-            </Link>
-          </div>
+            </Link> 
+          </div>*/}
           <div className="LetsGetStarted__action">
             <LetsGetStartedIcon
               renderCheck={hasVoted}
@@ -177,7 +177,7 @@ class LetsGetStarted extends React.Component {
                   LetsGetStarted__action__completed: hasVoted,
                 })}
               >
-                <FormattedMessage id="like_good_posts" defaultMessage="Vote on a proposal" />
+                <FormattedMessage id="vote_on_proposal" defaultMessage="Browse proposals" />
               </span>
             </Link>
           </div>
@@ -193,7 +193,7 @@ class LetsGetStarted extends React.Component {
                   LetsGetStarted__action__completed: hasPost,
                 })}
               >
-                <FormattedMessage id="write_first_post" defaultMessage="Make content/project proposal" />
+                <FormattedMessage id="make_first_proposal" defaultMessage="Make content/project proposal" />
               </span>
             </Link>
           </div>
