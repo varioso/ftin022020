@@ -152,6 +152,8 @@ class SubFeed extends React.Component {
         {ready && failed && <FetchFailed />}
         {displayEmptyFeed && <EmptyFeed />}
       <PostModal />
+      
+      const ftin = = match.url === '/ftin' && authenticated;
       </div>
     );
   }
