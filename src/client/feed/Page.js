@@ -15,6 +15,7 @@ import Affix from '../components/Utils/Affix';
 import ScrollToTop from '../components/Utils/ScrollToTop';
 import ScrollToTopOnMount from '../components/Utils/ScrollToTopOnMount';
 import QuickPostEditor from '../components/QuickPostEditor/QuickPostEditor';
+import LetsGetStarted from './LetsGetStarted';
 
 @connect(state => ({
   authenticated: getIsAuthenticated(state),
@@ -100,7 +101,9 @@ class Page extends React.Component {
                 />
               )} 
               {authenticated && <QuickPostEditor />}
-              
+
+                <LetsGetStarted />
+                  
               <SubFeed />
           
             </div> 
