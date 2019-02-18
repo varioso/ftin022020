@@ -292,7 +292,7 @@ class QuickPostEditor extends React.Component {
                 ref={ref => this.setInput(ref)}
                 placeholder={intl.formatMessage({
                   id: 'write_quick_post',
-                  defaultMessage: 'Write quick post',
+                  defaultMessage: 'Write quick proposal',
                 })}
                 value={this.state.currentInputValue}
                 maxLength="255"
