@@ -283,7 +283,7 @@ class Editor extends React.Component {
               mode="tags"
               placeholder={intl.formatMessage({
                 id: 'tags_placeholder',
-                defaultMessage: 'Add &quotFTIN&quot as tag',
+                defaultMessage: 'Add "FTIN" as tag',
               })}
               dropdownStyle={{ display: 'none' }}
               tokenSeparators={[' ', ',']}
