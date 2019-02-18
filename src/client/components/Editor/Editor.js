@@ -206,7 +206,7 @@ class Editor extends React.Component {
       <Form className="Editor" layout="vertical" onSubmit={this.handleSubmit}>
         <Helmet>
           <title>
-            {intl.formatMessage({ id: 'write_post', defaultMessage: 'Write post' })} - FTIN
+            {intl.formatMessage({ id: 'write_post', defaultMessage: 'Write proposal' })} - FTIN
           </title>
         </Helmet>
         <Form.Item
@@ -243,7 +243,7 @@ class Editor extends React.Component {
               className="Editor__title"
               placeholder={intl.formatMessage({
                 id: 'title_placeholder',
-                defaultMessage: 'Add title',
+                defaultMessage: 'Proposal title',
               })}
             />,
           )}
@@ -283,7 +283,7 @@ class Editor extends React.Component {
               mode="tags"
               placeholder={intl.formatMessage({
                 id: 'topics_placeholder',
-                defaultMessage: 'Add story topics here',
+                defaultMessage: 'Tag FTIN and other proposal topics',
               })}
               dropdownStyle={{ display: 'none' }}
               tokenSeparators={[' ', ',']}
