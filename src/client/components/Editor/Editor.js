@@ -242,7 +242,7 @@ class Editor extends React.Component {
               onChange={this.onUpdate}
               className="Editor__title"
               placeholder={intl.formatMessage({
-                id: 'title_placeholder',
+                id: 'proposal_title',
                 defaultMessage: 'Proposal title',
               })}
             />,
@@ -266,8 +266,8 @@ class Editor extends React.Component {
               {
                 required: true,
                 message: intl.formatMessage({
-                  id: 'topics_error_empty',
-                  defaultMessage: 'Please enter topics',
+                  id: 'tags_error_empty',
+                  defaultMessage: 'Please enter proposal tags',
                 }),
                 type: 'array',
               },
@@ -282,7 +282,7 @@ class Editor extends React.Component {
               className="Editor__topics"
               mode="tags"
               placeholder={intl.formatMessage({
-                id: 'topics_placeholder',
+                id: 'tags_placeholder',
                 defaultMessage: 'Tag FTIN and other proposal topics',
               })}
               dropdownStyle={{ display: 'none' }}
