@@ -137,7 +137,6 @@ class SubFeed extends React.Component {
     const displayEmptyFeed = empty && fetched && loaded && !isFetching && !failed;
 
     const ready = loaded && fetched && !isFetching;
-    const ftin = = match.url === '/ftin' && authenticated;
     
     return (
       <div>
