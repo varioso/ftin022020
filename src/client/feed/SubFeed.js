@@ -38,7 +38,7 @@ import PostModal from '../post/PostModalContainer';
     getFeedContent: (sortBy, category) => dispatch(getFeedContent({ sortBy, category, limit: 10 })),
     getMoreFeedContent: (sortBy, category) =>
       dispatch(getMoreFeedContent({ sortBy, category, limit: 10 })),
-   // showPostModal: post => dispatch(showPostModal(post)),
+   showPostModal: post => dispatch(showPostModal(post)),
   }),
 )
 class SubFeed extends React.Component {
