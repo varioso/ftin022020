@@ -69,7 +69,7 @@ class SubFeed extends React.Component {
       if (fetched) return;
       this.props.getFeedContent('feed', user.name);
     } else {
-      const sortBy = match.params.sortBy || 'ftin';
+      const sortBy = match.params.sortBy || 'trending';
       const fetched = getFeedFetchedFromState(sortBy, category, feed);
       if (fetched) return;
       this.props.getFeedContent(sortBy, category);
