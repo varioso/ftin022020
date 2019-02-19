@@ -8,6 +8,7 @@ const initialState = {
   hot: {},
   cashout: {},
   created: {},
+  ftin: {},
   active: {},
   trending: {},
   comments: {},
@@ -15,7 +16,6 @@ const initialState = {
   bookmarks: {},
   replies: {},
   promoted: {},
-   ftin: {},
 };
 
 const feedIdsList = (state = [], action) => {
