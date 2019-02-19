@@ -32,7 +32,7 @@ export const getFeedContent = ({ sortBy = 'ftin', category, limit = 20 }) => (
     payload: getDiscussionsFromAPI(sortBy, { tag: category, limit }, steemAPI),
     meta: {
       sortBy,
-      category: category || 'all',
+      category: category || 'ftin',
       limit,
     },
   });
@@ -68,7 +68,7 @@ export const getMoreFeedContent = ({ sortBy, category, limit = 20 }) => (
     ).then(postsData => postsData.slice(1)),
     meta: {
       sortBy,
-      category: category || 'all',
+      category: category || 'ftin',
       limit,
     },
   });
@@ -190,7 +190,7 @@ export const getBookmarks = () => (dispatch, getState, { steemAPI }) => {
     ),
     meta: {
       sortBy: 'bookmarks',
-      category: 'all',
+      category: 'ftin',
       once: true,
     },
   });
