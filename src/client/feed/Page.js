@@ -59,7 +59,7 @@ class Page extends React.Component {
 
     //if(sortBy=='new') sortBy = 'ftin'
     
-    const shouldDisplaySelector = location.pathname !== '/ftin' || (!authenticated && loaded);
+    const shouldDisplaySelector = location.pathname !== '/' || (!authenticated && loaded);
     const displayTopicSelector = location.pathname === '/ftin';
 
     const robots = location.pathname === '/ftin123' ? 'index,follow' : 'noindex,follow';
