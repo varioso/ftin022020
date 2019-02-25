@@ -68,7 +68,7 @@ export const getMoreFeedContent = ({ sortBy, category, limit = 20 }) => (
     ).then(postsData => postsData.slice(1)),
     meta: {
       sortBy,
-      category: category || 'ftin',
+      category: category || '/ftin',
       limit,
     },
   });
