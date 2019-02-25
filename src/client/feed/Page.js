@@ -32,7 +32,7 @@ class Page extends React.Component {
   };
 
   static fetchData({ store, match }) {
-    const { sortBy, category } = '/ftin';
+    const { sortBy, category } = match.params;
     
    //if(sortBy=='new') sortBy = 'ftin'
     
