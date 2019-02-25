@@ -190,7 +190,7 @@ export const getBookmarks = () => (dispatch, getState, { steemAPI }) => {
     ),
     meta: {
       sortBy: 'bookmarks',
-      category: 'ftin',
+      category: '/ftin',
       once: true,
     },
   });
