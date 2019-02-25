@@ -114,7 +114,7 @@ class SubFeed extends React.Component {
     let hasMore = false;
     let failed = false;
     let loadMoreContent = () => {};
-    const isAuthHomeFeed = match.url === '/ftin' && authenticated;
+    const isAuthHomeFeed = match.url === '/ftin123' && authenticated;
 
     if (isAuthHomeFeed) {
       content = getUserFeedFromState(user.name, feed);
