@@ -90,7 +90,7 @@ class SubFeed extends React.Component {
     if (!isLoaded && Cookie.get('access_token')) return;
 
     if (
-      match.url === '/ftin' &&
+      match.url === '/' &&
       ((match.url !== this.props.match.url && isAuthenticated) ||
         (isAuthenticated && !wasAuthenticated))
     ) {
@@ -114,7 +114,7 @@ class SubFeed extends React.Component {
     let hasMore = false;
     let failed = false;
     let loadMoreContent = () => {};
-    const isAuthHomeFeed = match.url === '/ftin123' && authenticated;
+    const isAuthHomeFeed = match.url === '/ftin' && authenticated;
 
     if (isAuthHomeFeed) {
       content = getUserFeedFromState(user.name, feed);
