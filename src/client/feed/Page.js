@@ -36,7 +36,7 @@ class Page extends React.Component {
     
    //if(sortBy=='new') sortBy = 'ftin'
     
-    return store.dispatch(getFeedContent({ sortBy, category: 'ftin', limit: 10 }));
+    return store.dispatch(getFeedContent({ sortBy, category: ftin, limit: 10 }));
   }
 
   handleSortChange = key => {
