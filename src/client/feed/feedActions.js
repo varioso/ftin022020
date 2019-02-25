@@ -32,7 +32,7 @@ export const getFeedContent = ({ sortBy = '/ftin', category, limit = 20 }) => (
     payload: getDiscussionsFromAPI(sortBy, { tag: category, limit }, steemAPI),
     meta: {
       sortBy,
-      category: category || 'ftin',
+      category: category || '/ftin',
       limit,
     },
   });
