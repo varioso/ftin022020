@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import find from 'lodash/find';
-import isEmpty from 'lodash/isEmpty';
+
 import { getHasDefaultSlider, getVoteValue } from '../../helpers/user';
 import Slider from '../Slider/Slider';
 import Buttons from './Buttons';
@@ -77,11 +77,9 @@ export default class CommentFooter extends React.Component {
 
   handleLikeClick = () => {
     const { sliderMode, user, comment } = this.props;
-    const shouldSeeSlider =
-      sliderMode === 'on' || (sliderMode === 'auto' && getHasDefaultSlider(user));
-
-     const userVote = find(comment.active_votes, { voter: user.name }) || {};
-    if ((isEmpty(userVote) || userVote.percent === 0) && shouldSeeSlider) {
+   
+    if (sliderMode === 'on' || (sliderMode === 'auto' && getHasDefaultSlider(user))) {
+      
       if (!this.state.sliderVisible) {
        this.setState(prevState => ({
           sliderVisible: !prevState.sliderVisible,
@@ -95,11 +93,9 @@ export default class CommentFooter extends React.Component {
 
   handleDislikeClick = () => {
     const { sliderMode, user, comment } = this.props;
-    const shouldSeeSlider =
-      sliderMode === 'on' || (sliderMode === 'auto' && getHasDefaultSlider(user));
-
-     const userVote = find(comment.active_votes, { voter: user.name }) || {};
-    if ((isEmpty(userVote) || userVote.percent === 0) && shouldSeeSlider) {
+   
+   if (sliderMode === 'on' || (sliderMode === 'auto' && getHasDefaultSlider(user))) {
+     
       if (!this.state.sliderVisible) {
         this.setState(prevState => ({
           sliderVisible: !prevState.sliderVisible,
