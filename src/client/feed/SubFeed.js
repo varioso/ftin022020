@@ -22,7 +22,7 @@ import { getIsAuthenticated, getIsLoaded, getAuthenticatedUser, getFeed } from '
 import Feed from './Feed';
 import FetchFailed from '../statics/FetchFailed';
 import EmptyFeed from '../statics/EmptyFeed';
-//import LetsGetStarted from './LetsGetStarted';
+import LetsGetStarted from './LetsGetStarted';
 import ScrollToTop from '../components/Utils/ScrollToTop';
 import PostModal from '../post/PostModalContainer';
 
@@ -140,7 +140,7 @@ class SubFeed extends React.Component {
     
     return (
       <div>
-        {isAuthHomeFeed}
+        {isAuthHomeFeed && <LetsGetStarted />}
         {empty && <ScrollToTop />}
         <Feed
           content={content}
