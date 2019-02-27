@@ -94,8 +94,8 @@ class HeroBanner extends React.Component {
                 <div className="HeroBanner__content__number">3</div>
                 <div className="HeroBanner__content__title" style={{ width: '130px' }}>
                   <FormattedMessage
-                    id="hero_banner_title_3"
-                    defaultMessage=""
+                    id="get_paid_in_crypto"
+                    defaultMessage="Get Paid in Crypto"
                   />
                 </div>
               </div>
