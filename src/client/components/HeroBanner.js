@@ -95,7 +95,7 @@ class HeroBanner extends React.Component {
                 <div className="HeroBanner__content__title" style={{ width: '130px' }}>
                   <FormattedMessage
                     id="get_paid_in_crypto"
-                    defaultMessage="Get Paid in Crypto"
+                    defaultMessage="Get paid in crypto"
                   />
                 </div>
               </div>
