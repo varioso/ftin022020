@@ -55,7 +55,6 @@ export default class CommentFooter extends React.Component {
     sliderValue: 100,
     voteWorth: 0,
     replyFormVisible: false,
-    sliderMode: null,
   };
 
   componentWillMount() {
@@ -81,43 +80,21 @@ export default class CommentFooter extends React.Component {
     if (sliderMode === 'on' || (sliderMode === 'auto' && getHasDefaultSlider(user))) {
       
       if (!this.state.sliderVisible) {
-       this.setState(prevState => ({
-          sliderVisible: !prevState.sliderVisible,
-          sliderMode: 'like',
-        }));
+        this.setState(prevState => ({ sliderVisible: !prevState.sliderVisible }));
+        
       }
     } else {
       this.props.onLikeClick(comment.id);
     }
   };
 
-  handleDislikeClick = () => {
-    const { sliderMode, user, comment } = this.props;
-   
-   if (sliderMode === 'on' || (sliderMode === 'auto' && getHasDefaultSlider(user))) {
-     
-      if (!this.state.sliderVisible) {
-        this.setState(prevState => ({
-          sliderVisible: !prevState.sliderVisible,
-          sliderMode: 'dislike',
-        }));
-      }
-    } else {
-      this.props.onDislikeClick(comment.id);
-    }
-  };
-
-   handleSliderConfirm = () => {
+  handleLikeConfirm = () => {
     this.setState({ sliderVisible: false }, () => {
-      if (this.state.sliderMode === 'like') {
-        this.props.onLikeClick(this.props.comment.id, this.state.sliderValue * 100);
-      } else if (this.state.sliderMode === 'dislike') {
-        this.props.onDislikeClick(this.props.comment.id, -this.state.sliderValue * 100);
-      }
+      this.props.onLikeClick(this.props.comment.id, this.state.sliderValue * 100);
     });
   };
 
-  
+  handleDislikeClick = () => this.props.onDislikeClick(this.props.comment.id);
 
   handleSliderCancel = () => this.setState({ sliderVisible: false });
 
@@ -143,7 +120,7 @@ export default class CommentFooter extends React.Component {
       replying,
       pendingVotes,
     } = this.props;
-    const { sliderVisible, sliderMode } = this.state;
+    
     const { sliderVisible } = this.state;
 
     let actionPanel = null;
@@ -169,13 +146,12 @@ export default class CommentFooter extends React.Component {
       );
     }
     
-    const sliderHeaderMessage = sliderMode === 'like' ? 'Like Power' : 'Dislike Power';
     return (
       <div className="CommentFooter">
         {actionPanel}
         {sliderVisible && (
           <Slider
-            headerMessage={sliderHeaderMessage}
+            
             value={this.state.sliderValue}
             voteWorth={this.state.voteWorth}
             onChange={this.handleSliderChange}
