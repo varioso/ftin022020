@@ -4,7 +4,6 @@ import ReduxInfiniteScroll from '../vendor/ReduxInfiniteScroll';
 import StoryContainer from './StoryContainer';
 import StoryLoading from '../components/Story/StoryLoading';
 import './Feed.less';
-import LetsGetStarted from './LetsGetStarted';
 
 const Feed = ({ content, isFetching, hasMore, loadMoreContent, showPostModal }) => (
   <ReduxInfiniteScroll
@@ -36,7 +35,5 @@ Feed.defaultProps = {
   loadMoreContent: () => {},
   showPostModal: () => {},
 };  
-
-<LetsGetStarted />
 
 export default Feed;
