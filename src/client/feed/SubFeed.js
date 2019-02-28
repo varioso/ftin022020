@@ -124,7 +124,7 @@ class SubFeed extends React.Component {
       failed = getUserFeedFailedFromState(user.name, feed);
       loadMoreContent = () => this.props.getMoreFeedContent('feed', user.name);
     } else {
-      const sortBy = match.params.sortBy || '/ftin';
+      const sortBy = match.params.sortBy || 'trending';
       content = getFeedFromState(sortBy, match.params.category, feed);
       isFetching = getFeedLoadingFromState(sortBy, match.params.category, feed);
       fetched = getFeedFetchedFromState(sortBy, match.params.category, feed);
