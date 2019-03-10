@@ -6,7 +6,7 @@ import { getUseBeta } from '../../reducers';
 const Redirect = ({ useBeta }) => {
   if (typeof window !== 'undefined' && window.location.host === 'network.futuretechinsider.com' && useBeta) {
     const url = window.location.href.split('/');
-    url[2] = 'staging.busy.org';
+    url[2] = 'ftin.herokuapp.com';
     window.location.replace(url.join('/'));
   }
 
