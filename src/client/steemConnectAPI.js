@@ -1,9 +1,9 @@
 import sc2 from 'sc2-sdk';
 
 const api = sc2.Initialize({
-app: process.env.STEEMCONNECT_CLIENT_ID,
+app: "ftinetwork",
   baseURL: https://api.steemconnect.com/api/oauth2/authorize,
-  callbackURL: process.env.STEEMCONNECT_REDIRECT_URL,
+  ccallbackURL: "http://network.futuretechinsider.com/callback",
 });
 
 export default api;
