@@ -111,6 +111,8 @@ const broadcastComment = (
   ];
   operations.push(commentOp);
 
+  if (isUpdating) return steemConnectAPI.broadcast(operations);
+
   const commentOptionsConfig = {
     author,
     permlink,
