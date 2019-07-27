@@ -140,7 +140,7 @@ export const sendComment = (parentPost, body, isUpdating = false, originalCommen
 export const likeComment = (commentId, weight = 10000, vote = 'like', retryCount = 0) => (
   dispatch,
   getState,
-  { steemAPI, steemConnectAPI },
+  { steemConnectAPI },
 ) => {
   const { auth, comments } = getState();
 
