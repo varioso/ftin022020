@@ -12,9 +12,9 @@ import WalletSidebar from '../../components/Sidebar/WalletSidebar';
 import FeedSidebar from '../../components/Sidebar/FeedSidebar';
 
 const RightSidebar = ({ authenticated, isAuthFetching }) => {
-    if (isAuthFetching) {
-      return <Loading />;
-    }
+  if (isAuthFetching) {
+    return <Loading />;
+  }
 
   return (
     <div>
@@ -40,10 +40,10 @@ const RightSidebar = ({ authenticated, isAuthFetching }) => {
   );
 };
 
-  RightSidebar.propTypes = {
-    authenticated: PropTypes.bool.isRequired,
-    isAuthFetching: PropTypes.bool.isRequired,
-  };
+RightSidebar.propTypes = {
+  authenticated: PropTypes.bool.isRequired,
+  isAuthFetching: PropTypes.bool.isRequired,
+};
     
 const mapStateToProps = state => ({
   authenticated: getIsAuthenticated(state),
@@ -51,6 +51,3 @@ const mapStateToProps = state => ({
 });
 
 export default withRouter(connect(mapStateToProps)(RightSidebar));
-    
-
-    
