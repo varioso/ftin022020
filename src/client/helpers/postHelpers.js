@@ -69,7 +69,7 @@ export function getContentImages(content, parsed = false) {
 export function createPostMetadata(body, tags, oldMetadata = {}) {
   let metaData = {
     community: 'ftin',
-    app: `network.futuretechinsider/${appVersion}`,
+    app: `ftinetwork/${appVersion}`,
     format: 'markdown',
   };
 
