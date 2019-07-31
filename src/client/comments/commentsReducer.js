@@ -66,7 +66,6 @@ const comments = (state = {}, action) => {
         ...state,
         ...mapCommentsBasedOnId(action.payload.content, action),
       };
-    }
     default:
       return state;
   }
