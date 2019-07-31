@@ -169,7 +169,7 @@ export default class Buttons extends React.Component {
 
     let popoverMenu = [];
 
-    if (ownPost && post.cashout_time !== '1969-12-31T23:59:59') {
+    if (ownPost) {
       popoverMenu = [
         ...popoverMenu,
         <PopoverMenuItem key="edit">
@@ -245,7 +245,7 @@ export default class Buttons extends React.Component {
       parseFloat(post.total_payout_value) +
       parseFloat(post.curator_payout_value);
     const voteRshares = post.active_votes.reduce((a, b) => a + parseFloat(b.rshares), 0);
-    const ratio = totalPayout / voteRshares;
+    const ratio = voteRshares === 0 ? 0 : totalPayout / voteRshares;
 
     const upVotesPreview = take(upVotes, 10).map(vote => (
       <p key={vote.voter}>
