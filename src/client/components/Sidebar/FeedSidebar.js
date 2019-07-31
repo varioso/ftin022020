@@ -12,7 +12,7 @@ const FeedSidebar = ({ match }) => {
   return (
     <div>
       {!_.isEmpty(currentCrypto) && <CryptoTrendingCharts cryptos={[currentTag]} />}
-    <InterestingPeopleContainer />
+      <InterestingPeopleContainer />
     </div>
   );
 };
