@@ -34,30 +34,30 @@ class UserActionIcon extends React.Component {
           const actionJSON = JSON.parse(actionDetails.json);
           const customActionType = actionJSON[0];
           const customActionDetails = actionJSON[1];
-        
-       if (!_.includes(accountHistoryConstants.PARSED_CUSTOM_JSON_IDS, actionDetails.id)) {
-         return 'icon-document';
-         }
+          
+          if (!_.includes(accountHistoryConstants.PARSED_CUSTOM_JSON_IDS, actionDetails.id)) {
+            return 'icon-document';
+          }
           if (
             customActionType === accountHistoryConstants.REBLOG &&
             currentUsername === customActionDetails.account
-            ) {
+          ) {
             return 'icon-share1';
-            } else if (
-              customActionType === accountHistoryConstants.FOLLOW &&
-              currentUsername === customActionDetails.follower
-              ) {
-              switch (customActionDetails.what[0]) {
-                  case 'ignore':
-                    return 'icon-delete_fill';
-                  case 'blog':
-                    return 'icon-addpeople_fill';
-                  default:
-                    return 'icon-addpeople';
-                }                
+          } else if (
+            customActionType === accountHistoryConstants.FOLLOW &&
+            currentUsername === customActionDetails.follower
+          ) {
+            switch (customActionDetails.what[0]) {
+               case 'ignore':
+                 return 'icon-delete_fill';
+               case 'blog':
+                 return 'icon-addpeople_fill';
+               default:
+                 return 'icon-addpeople';
+             }                
           }
-        }
-        return null;
+          
+          return null;
         } catch (err) {
           return 'icon-barrage';
         }
@@ -99,7 +99,7 @@ class UserActionIcon extends React.Component {
             return customActionDetails.follower;
           }
 
-        return null;
+          return null;
         } catch (err) {
           return 'icon-barrage';
         }
