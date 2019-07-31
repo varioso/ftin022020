@@ -146,6 +146,7 @@ const pendingVotes = (state = initialState.pendingVotes, action) => {
       return state;
   }
 };
+
 export const getComments = state => state;
 export const getCommentsList = state => state.comments;
 export const getCommentsPendingVotes = state => state.pendingVotes;
