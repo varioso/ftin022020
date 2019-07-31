@@ -12,6 +12,7 @@ import { getAuthenticatedUserName } from '../reducers';
 import FacebookShare from '../components/Button/FacebookShare';
 import TwitterShare from '../components/Button/TwitterShare';
 import EmailShare from '../components/Button/EmailShare';
+import { REFERRAL_PERCENT } from '../helpers/constants';
 import './Invite.less';
 
 @requiresLogin
