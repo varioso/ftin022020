@@ -12,7 +12,7 @@ const initialState = {
 
 const childrenById = (state = initialState.childrenById, action) => {
   switch (action.type) {
-      case commentsTypes.GET_SINGLE_COMMENT.SUCCESS: {
+    case commentsTypes.GET_SINGLE_COMMENT.SUCCESS: {
       const commentKey = getPostKey(action.payload);
       const parentKey = getParentKey(action.payload);
       const oldComments = state[commentKey] || [];
@@ -40,7 +40,7 @@ const mapCommentsBasedOnId = data => {
     const newKey = getPostKey(data[key]);
     
     commentsList[newKey] = { ...comment, id: newKey };
-    });
+  });
   return commentsList;
 };
 
@@ -97,7 +97,7 @@ const isLoaded = (state = initialState.isLoaded, action) => {
 
 const pendingVotes = (state = initialState.pendingVotes, action) => {
   switch (action.type) {
-      case commentsTypes.LIKE_COMMENT_START:
+    case commentsTypes.LIKE_COMMENT_START:
       return [
         ...state,
         {
