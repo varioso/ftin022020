@@ -117,7 +117,6 @@ export default class Comments extends React.Component {
     const userVote = find(commentsList[id].active_votes, { voter: user.name }) || {};
 
     if (sliderMode === 'on' || (sliderMode === 'auto' && getHasDefaultSlider(user))) {
-
       this.props.voteComment(id, weight, 'like');
     } else if (userVote.percent > 0) {
       this.props.voteComment(id, 0, 'like');
@@ -132,8 +131,7 @@ export default class Comments extends React.Component {
 
     const userVote = find(commentsList[id].active_votes, { voter: user.name }) || {};
 
-      if (userVote.percent < 0) {
-      
+    if (userVote.percent < 0) {
       this.props.voteComment(id, 0, 'dislike');
     } else {
       this.props.voteComment(id, -10000, 'dislike');
