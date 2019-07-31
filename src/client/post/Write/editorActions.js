@@ -150,6 +150,7 @@ const broadcastComment = (
   }
 
   operations.push(['comment_options', commentOptionsConfig]);
+
   return steemConnectAPI.broadcast(operations);
 };
 
