@@ -1,7 +1,12 @@
+export const BENEFICIARY_ACCOUNT = 'network.futuretechinsider.com';
+export const BENEFICIARY_PERCENT = 1000;
+export const REFERRAL_PERCENT = 1000;
+export const MAX_TAG = 12; // to support SCOT tokens. but some Steem API may not work properly for more than 5 tags.
 export const knownDomains = [
   
-      'busy.org',
-      'network.futuretechinsider.com',
+  'busy.org',
+  'network.futuretechinsider.com',
+  'ftin.herokuapp.com'
   'staging.busy.org',
   'steemit.com',
   'steem.io',
@@ -112,5 +117,6 @@ export const people = [
   'gargon',
   'ocrdu',
   'nanzo-scoop',
+  'blockchainstudio',
   'surfermarly',
 ];
