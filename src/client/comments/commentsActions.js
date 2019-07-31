@@ -22,7 +22,7 @@ export const LIKE_COMMENT_SUCCESS = '@comments/LIKE_COMMENT_SUCCESS';
 export const LIKE_COMMENT_ERROR = '@comments/LIKE_COMMENT_ERROR';
 
 export const getSingleComment = (author, permlink, focus = false) => (
-  dispatch
+  dispatch,
   getState,
   { steemAPI },
 ) =>
