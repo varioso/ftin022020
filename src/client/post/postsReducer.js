@@ -59,7 +59,6 @@ const posts = (state = initialState, action) => {
         const key = getPostKey(post);
         list[key] = { ...post, id: key };
         postsStates[key] = {
-        
           fetching: false,
           loaded: true,
           failed: false,
@@ -87,6 +86,7 @@ const posts = (state = initialState, action) => {
       };
     case postsActions.GET_CONTENT.SUCCESS: {
       const key = getPostKey(action.payload);
+      
       const baseState = {
         ...state,
         list: {
