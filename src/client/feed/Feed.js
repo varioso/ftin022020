@@ -17,8 +17,8 @@ const Feed = ({ content, isFetching, hasMore, loadMoreContent, showPostModal }) 
   >
     {content.map(id => <StoryContainer key={id} id={id} showPostModal={showPostModal} />)}
   </ReduxInfiniteScroll> 
-
 ); 
+
 Feed.propTypes = {
   showPostModal: PropTypes.func,
   content: PropTypes.arrayOf(PropTypes.string),
@@ -33,6 +33,6 @@ Feed.defaultProps = {
   hasMore: false,
   loadMoreContent: () => {},
   showPostModal: () => {},
-};  
+};
 
 export default Feed;
