@@ -17,8 +17,8 @@ const FeedSidebar = ({ match }) => {
   );
 };
 
-  FeedSidebar.propTypes = {
-    match: PropTypes.shape().isRequired,
-  };
+FeedSidebar.propTypes = {
+  match: PropTypes.shape().isRequired,
+};
 
 export default FeedSidebar;
