@@ -86,6 +86,7 @@ const posts = (state = initialState, action) => {
         },
       };
     case postsActions.GET_CONTENT.SUCCESS: {
+      const key = getPostKey(action.payload);
       const baseState = {
         ...state,
         list: {
@@ -93,6 +94,7 @@ const posts = (state = initialState, action) => {
           [key]: {
             ...state.list[key],
             ...action.payload,
+            id: key,
           },
         },
         postsStates: {
