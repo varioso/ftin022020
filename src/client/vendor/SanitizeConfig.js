@@ -182,9 +182,9 @@ export default ({
 
        if (!internalLink) {
         attys.target = '_blank';
-      
-      if (secureLinks && knownDomains.indexOf(linkUrl.hostname) === -1) {
-        href = `/exit?url=${encodeURIComponent(href)}`;	          href = `/exit?url=${encodeURIComponent(href)}`;
+         
+        if (secureLinks && knownDomains.indexOf(linkUrl.hostname) === -1) {
+          href = `/exit?url=${encodeURIComponent(href)}`;
         }
       }
 
