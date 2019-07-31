@@ -23,7 +23,6 @@ import PostContent from './PostContent';
 import Affix from '../components/Utils/Affix';
 import HiddenPostMessage from './HiddenPostMessage';
 import RightSidebar from '../app/Sidebar/RightSidebar';
-import PostRecommendation from '../components/Sidebar/PostRecommendation';
 import CryptoTrendingCharts from '../components/Sidebar/CryptoTrendingCharts';
 import ScrollToTopOnMount from '../components/Utils/ScrollToTopOnMount';
 
