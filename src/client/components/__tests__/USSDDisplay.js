@@ -21,7 +21,7 @@ describe('<USSDDisplay />', () => {
     expect(wrapper.text()).toEqual('$0.017');
   });
 
-  it('handle small negative numbers properly.', () => {
+  it('handles negative values properly', () => {
     const wrapper = getWrapper(-1.33);
     expect(wrapper.text()).toEqual('-$1.33');
   });
