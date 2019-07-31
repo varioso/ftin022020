@@ -145,7 +145,7 @@ const broadcastComment = (
     beneficiaries.push({ account: referral, weight: REFERRAL_PERCENT });
   }
 
-  if (beneficiaries.length !== 0) {  
+  if (beneficiaries.length !== 0) {
     commentOptionsConfig.extensions.push([0, { beneficiaries }]);
   }
 
