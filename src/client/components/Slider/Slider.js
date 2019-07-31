@@ -80,7 +80,7 @@ export default class Slider extends React.Component {
               id="like_slider_info"
               defaultMessage="Your vote will be worth {amount}."
               values={{
-                  amount: <USDDisplay value={this.getCurrentValue()} />,
+                amount: <USDDisplay value={this.getCurrentValue()} />,
               }}
             />
           </h3>
