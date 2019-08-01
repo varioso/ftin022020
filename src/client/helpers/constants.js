@@ -119,4 +119,6 @@ export const people = [
   'nanzo-scoop',
   'surfermarly',
   'blockchainstudio',
+  'ftin',
+  'varioso',
 ];
