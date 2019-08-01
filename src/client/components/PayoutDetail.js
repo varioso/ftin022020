@@ -111,7 +111,6 @@ const PayoutDetail = ({ intl, post }) => {
             id="payout_beneficiaries_payout_amount"
             defaultMessage="Beneficiaries payout: {amount}"
             amount={beneficiariesPayouts}
-            amount={pastPayouts}
           />
           {beneficaries}
           <AmountWithLabel
