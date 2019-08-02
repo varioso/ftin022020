@@ -13,7 +13,7 @@ export const knownDomains = [
   
   'busy.org',
   'network.futuretechinsider.com',
-  'ftin.herokuapp.com'
+  'ftin.herokuapp.com',
   'staging.busy.org',
   'steemit.com',
   'steem.io',
