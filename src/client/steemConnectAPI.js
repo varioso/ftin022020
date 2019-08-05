@@ -1,4 +1,4 @@
-import sc2 from 'steemconnect';
+import sc from 'steemconnect';
 
 const api = new sc.Client({
 app: "ftinetwork",
