@@ -1,6 +1,6 @@
-import sc from 'steemconnect';
+import steemconnect from 'steemconnect';
 
-const api = new sc.Client({
+const api = new steemconnect.Client({
 app: "ftinetwork",
   baseURL: "https://steemconnect.com",
   callbackURL: "http://network.futuretechinsider.com/callback",
