@@ -29,7 +29,7 @@ export default function createSsrHandler(template) {
     try {
       const api = new steemconnect.Client({
         app: process.env.STEEMCONNECT_CLIENT_ID,
-        baseURL: process.env.STEEMCONNECT_HOST,
+       // baseURL: process.env.STEEMCONNECT_HOST,
         callbackURL: process.env.STEEMCONNECT_REDIRECT_URL,
       });
 
