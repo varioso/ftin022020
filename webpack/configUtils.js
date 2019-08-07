@@ -41,7 +41,7 @@ const DEFINE_PLUGIN = new webpack.DefinePlugin({
     process.env.STEEMCONNECT_CLIENT_ID || 'ftinetwork',
   ),
   'process.env.STEEMCONNECT_REDIRECT_URL': JSON.stringify(
-    process.env.STEEMCONNECT_REDIRECT_URL || 'http://network.futuretechinsider.com/callback',
+    process.env.STEEMCONNECT_REDIRECT_URL || `http://${CALLBACK_HOST_URL}/callback`,
   ),
   //'process.env.STEEMCONNECT_HOST': JSON.stringify(
     //process.env.STEEMCONNECT_HOST || 'https://steemconnect.com',
