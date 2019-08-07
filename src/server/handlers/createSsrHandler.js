@@ -5,7 +5,7 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import { matchRoutes, renderRoutes } from 'react-router-config';
 
-import steemconnect from 'steemconnect';
+import sc2 from 'sc2-sdk';
 import getStore from '../../client/store';
 import routes from '../../common/routes';
 import renderSsrPage from '../renderers/ssrRenderer';
@@ -27,9 +27,9 @@ function createTimeout(timeout, promise) {
 export default function createSsrHandler(template) {
   return async function serverSideResponse(req, res) {
     try {
-      const api = new steemconnect.Client({
+      const api = sc2.Initialize({
         app: process.env.STEEMCONNECT_CLIENT_ID,
-       // baseURL: process.env.STEEMCONNECT_HOST,
+        baseURL: process.env.STEEMCONNECT_HOST,
         callbackURL: process.env.STEEMCONNECT_REDIRECT_URL,
       });
 
