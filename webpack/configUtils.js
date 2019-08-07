@@ -7,6 +7,18 @@ const IS_DEV = process.env.NODE_ENV !== 'production';
 const SERVER_PORT = process.env.PORT || 3000;
 const CONTENT_PORT = IS_DEV ? SERVER_PORT + 1 : SERVER_PORT;
 
+let CALLBACK_HOST_URL = 'network.futuretechinsider.com';
+switch (process.env.NODE_ENV) {
+  case 'development':
+    CALLBACK_HOST_URL = 'localhost:3000';
+    break;
+  case 'staging':
+    CALLBACK_HOST_URL = 'ftin.herokuapp.com';
+    break;
+  default:
+    break;
+}
+
 const MATCH_JS = /\.js$/i;
 const MATCH_CSS_LESS = /\.(css|less)$/i;
 const MATCH_FONTS = /\.(eot|ttf|woff|woff2|svg)(\?.+)?$/;
