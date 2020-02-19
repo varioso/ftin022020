@@ -1,6 +1,7 @@
 import * as settingsTypes from './settingsActions';
 import * as authTypes from '../auth/authActions';
 import { rewardsValues } from '../../common/constants/rewards';
+import { USER_METADATA_KEY } from '../helpers/constants';
 
 const initialState = {
   locale: 'auto',
@@ -18,9 +19,7 @@ const initialState = {
 const settings = (state = initialState, action) => {
   switch (action.type) {
     case authTypes.LOGIN_SUCCESS:
-    case authTypes.RELOAD_SUCCESS:
-      if (action.meta && action.meta.refresh) return state;
-      if (action.payload.user_metadata && action.payload.user_metadata.settings) {
+      try {
         const {
           locale,
           votingPower,
@@ -31,7 +30,40 @@ const settings = (state = initialState, action) => {
           exitPageSetting,
           rewardSetting,
           useBeta,
-        } = action.payload.user_metadata.settings;
+        } = JSON.parse(localStorage.getItem(USER_METADATA_KEY)).settings;
+        return {
+          ...state,
+          locale: locale || initialState.locale,
+          votingPower: votingPower || initialState.votingPower,
+          votePercent: votePercent || initialState.votePercent,
+          showNSFWPosts: showNSFWPosts || initialState.showNSFWPosts,
+          nightmode: nightmode || initialState.nightmode,
+          rewriteLinks:
+            typeof rewriteLinks === 'boolean' ? rewriteLinks : initialState.rewriteLinks,
+          exitPageSetting:
+            typeof exitPageSetting === 'boolean' ? exitPageSetting : initialState.exitPageSetting,
+          rewardSetting: rewardSetting || initialState.rewardSetting,
+          useBeta: typeof useBeta === 'boolean' ? useBeta : initialState.useBeta,
+        };
+      } catch (error) {
+        // this is due to localStorage hasn't been ready. Can be ignored. but reload is needed for VP settings.
+        console.log(error);
+        return state;
+      }
+    case authTypes.RELOAD_SUCCESS:
+      if (action.meta && action.meta.refresh) return state;
+      if (action.payload && action.payload.settings) {
+        const {
+          locale,
+          votingPower,
+          votePercent,
+          showNSFWPosts,
+          nightmode,
+          rewriteLinks,
+          exitPageSetting,
+          rewardSetting,
+          useBeta,
+        } = action.payload.settings;
         return {
           ...state,
           locale: locale || initialState.locale,
