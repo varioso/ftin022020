@@ -31,7 +31,7 @@ export const login = () => (dispatch, getState, { steemConnectAPI }) => {
 
   if (getIsLoaded(state)) {
     promise = Promise.resolve(null);
-  } else if (!steemConnectAPI.accessToken) {
+  } else if (!steemConnectAPI.options.accessToken) {
     promise = Promise.reject(new Error('There is not accessToken present'));
   } else {
     promise = steemConnectAPI.me().catch(() => dispatch(loginError()));
